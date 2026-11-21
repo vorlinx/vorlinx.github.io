@@ -154,7 +154,18 @@ const messages = {
     "privacyNote": [
       "模型需提前准备。",
       "局域网访问由你主动开启。"
-    ]
+    ],
+    "seoDescription": "Vorlinx 是内置本地 AI 的 macOS 个人文件管理应用。跨目录连接与分组资料，自然语言搜索，阅读 PDF、自定义音色朗读与 Markdown 编辑。文件与 AI 处理留在设备上。",
+    "faqDescription": "了解 Vorlinx 的本地 AI、模型准备、首次使用、macOS 推荐配置、跨设备传输与加密备份。",
+    "privacyDescription": "了解 Vorlinx 如何在本地处理文件、语音和 AI 数据，以及权限、模型下载、局域网分享、加密备份与资料删除。",
+    "supportDescription": "Vorlinx 的 Mac App Store 发布渠道、Apple M1 与 macOS 26 推荐配置、联系与反馈信息，以及用户许可。",
+    "aboutDescription": "认识 Vorlinx：面向个人的 macOS 纯本地文件管理应用，把文件连接、主题整理、阅读与创作放在同一个空间。",
+    "page404Title": "没有找到这个页面",
+    "error404Body": "这个地址可能有误，或页面已经移动。你可以返回首页，继续了解 Vorlinx。",
+    "faqModelsQ": "模型是否需要先下载？",
+    "faqModelsA": "使用相应 AI 功能前，需要先准备模型或语言资源。下载可能需要网络连接；准备完成后，文件分析、搜索与朗读在本地运行。",
+    "faqSystemQ": "为什么推荐 macOS 26？",
+    "faqSystemA": "部分长音频处理与语音转写功能使用 macOS 26 提供的系统 API。推荐 Apple M1 或更新芯片及 macOS 26 或更新版本，以获得更完整的体验；这不是所有功能的统一最低要求。"
   },
   "zh-Hant-TW": {
     "download": "下載",
@@ -311,7 +322,18 @@ const messages = {
     "privacyNote": [
       "模型需事先準備。",
       "區域網路存取由你主動開啟。"
-    ]
+    ],
+    "seoDescription": "Vorlinx 是內建本地 AI 的 macOS 個人檔案管理應用程式。跨目錄連結與分組資料，自然語言搜尋，閱讀 PDF、自訂音色朗讀與 Markdown 編輯。檔案與 AI 處理留在裝置上。",
+    "faqDescription": "瞭解 Vorlinx 的本地 AI、模型準備、首次使用、macOS 建議配置、跨裝置傳輸與加密備份。",
+    "privacyDescription": "瞭解 Vorlinx 如何在本地處理檔案、語音和 AI 資料，以及權限、模型下載、區域網路分享、加密備份與資料刪除。",
+    "supportDescription": "Vorlinx 的 Mac App Store 發佈管道、Apple M1 與 macOS 26 建議配置、聯絡與回饋資訊，以及使用者授權。",
+    "aboutDescription": "認識 Vorlinx：面向個人的 macOS 純本地檔案管理應用程式，把檔案連結、主題整理、閱讀與創作放在同一個空間。",
+    "page404Title": "找不到這個頁面",
+    "error404Body": "這個網址可能有誤，或頁面已移動。你可以返回首頁，繼續瞭解 Vorlinx。",
+    "faqModelsQ": "模型是否需要先下載？",
+    "faqModelsA": "使用相應 AI 功能前，需要先準備模型或語言資源。下載可能需要網路連線；準備完成後，檔案分析、搜尋與朗讀在本地執行。",
+    "faqSystemQ": "為什麼建議 macOS 26？",
+    "faqSystemA": "部分長音訊處理與語音轉寫功能使用 macOS 26 提供的系統 API。建議 Apple M1 或更新晶片及 macOS 26 或更新版本，以獲得更完整的體驗；這不是所有功能的統一最低需求。"
   },
   "en-US": {
     "download": "Download",
@@ -468,7 +490,18 @@ const messages = {
     "privacyNote": [
       "Prepare local models before use.",
       "Local network access starts only when you enable it."
-    ]
+    ],
+    "seoDescription": "Organize files across folders with local AI on your Mac. Link, group, search in natural language, read PDFs, listen in a custom voice and edit Markdown.",
+    "faqDescription": "Answers about Vorlinx local AI, model setup, getting started, recommended Macs, local network transfers and encrypted backups.",
+    "privacyDescription": "How Vorlinx handles local files, speech and AI data, permissions, model downloads, local sharing, encrypted backups and deletion.",
+    "supportDescription": "Vorlinx distribution, recommended Apple M1 and macOS 26 setup, contact and feedback information, and app license.",
+    "aboutDescription": "Meet Vorlinx, a personal file manager for macOS that brings file links, topic groups, reading and writing together with local AI.",
+    "page404Title": "Page not found",
+    "error404Body": "The address may be incorrect or the page may have moved. Return to the homepage to explore Vorlinx.",
+    "faqModelsQ": "Do I need to download models first?",
+    "faqModelsA": "Prepare the required models or language resources before using the corresponding AI features. Downloads may need an internet connection; file analysis, search and read aloud then run locally.",
+    "faqSystemQ": "Why is macOS 26 recommended?",
+    "faqSystemA": "Some long-audio processing and transcription features use APIs introduced in macOS 26. Apple M1 or newer and macOS 26 or later are recommended for a fuller experience, rather than being universal minimum requirements."
   }
 };
 
@@ -590,7 +623,10 @@ function applyLanguage(language) {
   });
   document.querySelectorAll('[data-screenshot]').forEach(image => {
     const name = image.dataset.screenshot;
-    const path = `/assets/${language.toLowerCase()}/${name}.png`;
+    const resources = JSON.parse(image.dataset.resources)[language];
+    const path = resources.src;
+    const picture = image.closest('picture');
+    picture.querySelector('source').srcset = resources.srcset;
     if (image.getAttribute('src') !== path) image.setAttribute('src', path);
     image.alt = copy[screenshotLabels[name]];
     const dimensions = JSON.parse(image.dataset.dimensions)[language];
@@ -605,18 +641,19 @@ function applyLanguage(language) {
     const target = link.dataset.pageLink;
     link.href = '/' + language.toLowerCase() + '/' + (target ? target + '/' : '');
   });
-  document.querySelector('meta[name="description"]').content = copy.productDefinition;
+  const description = page === '404' ? copy.error404Body : page ? copy[page + 'Description'] : copy.seoDescription;
+  document.querySelector('meta[name="description"]').content = description;
   const canonical = document.querySelector('link[rel="canonical"]');
   const pageURL = new URL(languagePath(language), canonical.href);
   canonical.href = pageURL.href;
   for (const [selector, value] of [
     ['meta[property="og:title"]', document.title],
-    ['meta[property="og:description"]', copy.productDefinition],
+    ['meta[property="og:description"]', description],
     ['meta[property="og:url"]', pageURL.href],
     ['meta[property="og:image"]', new URL('/assets/' + language.toLowerCase() + '/link.png', pageURL).href],
     ['meta[property="og:locale"]', language === 'en-US' ? 'en_US' : language === 'zh-Hant-TW' ? 'zh_TW' : 'zh_CN'],
     ['meta[name="twitter:title"]', document.title],
-    ['meta[name="twitter:description"]', copy.productDefinition],
+    ['meta[name="twitter:description"]', description],
     ['meta[name="twitter:image"]', new URL('/assets/' + language.toLowerCase() + '/link.png', pageURL).href]
   ]) { document.querySelector(selector).content = value; }
   const schema = document.querySelector('#site-schema');
@@ -624,9 +661,9 @@ function applyLanguage(language) {
   for (const entity of graph['@graph']) {
     entity.url = entity['@type'] === 'WebSite' ? new URL('/' + language.toLowerCase() + '/', pageURL).href : pageURL.href;
     entity.inLanguage = language;
-    if (entity['@type'] === 'WebPage') entity.name = copy[pageTitleKey];
+    if (entity['@type'] === 'WebPage') { entity.name = copy[pageTitleKey]; entity.description = description; }
     if (entity['@type'] === 'SoftwareApplication') {
-      entity.description = copy.productDefinition;
+      entity.description = description;
       entity.screenshot = new URL('/assets/' + language.toLowerCase() + '/link.png', pageURL).href;
     }
   }
@@ -634,13 +671,13 @@ function applyLanguage(language) {
   const url = new URL(location.href);
   url.pathname = languagePath(language);
   url.searchParams.delete('lang');
-  history.replaceState(null, '', url);
+  if (page !== '404') history.replaceState(null, '', url);
   currentLanguage = language;
 }
 
 async function fadeLanguageContent(from, to) {
   if (reducedMotion.matches) return;
-  const targets = document.querySelectorAll('[data-i18n]:not(.sr-only), .hero-shot>[data-screenshot]');
+  const targets = document.querySelectorAll('[data-i18n]:not(.sr-only), .hero-shot [data-screenshot]');
   const animations = [...targets].map(element => {
     const animation = element.animate([{opacity:from}, {opacity:to}], {
       duration:to > from ? 640 : 360,
@@ -655,10 +692,12 @@ async function fadeLanguageContent(from, to) {
 
 async function prepareHeroImage(language) {
   const image = new Image();
-  const hero = document.querySelector('.hero-shot>[data-screenshot]');
+  const hero = document.querySelector('.hero-shot [data-screenshot]');
   if (!hero) return;
-  const name = hero.dataset.screenshot;
-  image.src = `/assets/${language.toLowerCase()}/${name}.png`;
+  const resources = JSON.parse(hero.dataset.resources)[language];
+  image.sizes = hero.closest('picture').querySelector('source').sizes;
+  image.srcset = resources.srcset;
+  image.src = resources.src;
   // Decoding first avoids showing an empty frame while a new image loads.
   // A missing replacement image must not prevent changing the site's language.
   await image.decode().catch(() => {});
@@ -684,7 +723,7 @@ async function changeLanguage(language) {
         preparation = prepareHeroImage(preparedLanguage);
       }
       applyLanguage(preparedLanguage);
-      const hero = document.querySelector('.hero-shot>[data-screenshot]');
+      const hero = document.querySelector('.hero-shot [data-screenshot]');
       if (hero) await hero.decode().catch(() => {});
       document.body.dataset.languageTransition = 'fading-in';
       await fadeLanguageContent(0, 1);
