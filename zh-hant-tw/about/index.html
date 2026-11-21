@@ -48,6 +48,9 @@
  .faq-preview{padding-top:36px}.faq-preview>h2{font-size:25px;margin-bottom:20px}.faq-preview summary{font-size:16px;padding:18px 0}.site-footer{margin-top:36px}.footer-grid{grid-template-columns:1fr 1fr;gap:32px;padding:40px 0}.footer-brand{grid-column:1/-1}.footer-brand img{width:170px}.footer-brand p{max-width:100%}.footer-bottom{flex-direction:column;gap:8px}.information-page{padding:30px 0 48px}.information-page h1{font-size:30px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+/* Keep the longer local-AI pricing note clear at narrow header widths. */
+@media(min-width:701px) and (max-width:900px){.local-label{max-width:220px;white-space:normal;text-align:right;line-height:1.6}}
+@media(max-width:700px){.local-label{white-space:normal;text-align:right;line-height:1.6}}
 </style>
 <!-- INLINE-CSS:END -->
 <!-- SEO:START -->
@@ -77,7 +80,7 @@
   <div class="site-header">
   <header class="masthead shell"><div class="brand"><img class="brand-image" src="/assets/shared/vorlinx-brand-512.png" width="512" height="123" alt="Vorlinx"></div>
 <div class="header-actions">
-<p class="local-label"><span data-icon="lock"></span><span data-i18n="localLabel">本地 AI · 無需雲端</span></p>
+<p class="local-label"><span data-icon="lock"></span><span data-i18n="localLabel">本地 AI · 無訂閱 · 無雲端費用</span></p>
 <button class="download-button" data-download aria-haspopup="dialog" aria-label="下載" data-i18n-aria="download"><span data-i18n="download">下載</span></button><div class="language-control">
 <span class="sr-only" id="language-label" data-i18n="languageLabel">選擇語言</span><button id="language" class="language-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu" aria-labelledby="language-label language-current"><span id="language-current">繁體中文</span><svg viewbox="0 0 16 16" aria-hidden="true"><path d="m5 6 3 3 3-3"></path></svg></button><div id="language-menu" class="language-menu" role="menu" aria-labelledby="language-label" hidden>
 <a href="/zh-hans-cn/about/" role="menuitemradio" aria-checked="false" data-language="zh-Hans-CN" tabindex="-1">简体中文</a><a href="/zh-hant-tw/about/" role="menuitemradio" aria-checked="true" data-language="zh-Hant-TW" tabindex="-1">繁體中文</a><a href="/en-us/about/" role="menuitemradio" aria-checked="false" data-language="en-US" tabindex="-1">English</a>
@@ -88,11 +91,11 @@
   <noscript><nav class="no-script-languages" aria-label="Languages"><a href="/zh-hans-cn/" lang="zh-Hans-CN">简体中文</a><a href="/zh-hant-tw/" lang="zh-Hant-TW">繁體中文</a><a href="/en-us/" lang="en-US">English</a></nav></noscript>
   <main class="information-page shell"><a class="back-home" href="/zh-hant-tw/" data-page-link="" data-i18n="backHome">返回首頁</a><h1 data-i18n="pageAboutTitle">關於 Vorlinx</h1><article><h2 data-i18n="aboutTitle">為個人資料，留一個自在的本地空間。</h2><p data-i18n="aboutBody">Vorlinx 希望讓分散的資料更容易看見、組織與使用。透過檔案之間的連結和主題分組，把閱讀、思考與創作放在同一個空間裡。</p><p data-i18n="productDefinition">Vorlinx 是一款 macOS 純本地個人檔案管理應用程式。連結、分組不同資料夾中的資料，支援自然語言搜尋、文件閱讀與自訂音色朗讀，以及極簡 Markdown 編輯。 檔案與 AI 模型都在你的裝置上，無需上傳，離線使用。</p></article></main>
 <footer class="site-footer"><div class="footer-grid shell">
-<div class="footer-brand"><a href="/zh-hant-tw/" data-page-link="" aria-label="Vorlinx"><img src="/assets/shared/vorlinx-brand-512.png" width="512" height="123" alt="Vorlinx"></a><p data-i18n="footerBlurb">把常用資料留在眼前，讓檔案與思路都有自己的位置。</p><span data-i18n="localLabel">本地 AI · 無需雲端</span></div>
+<div class="footer-brand"><a href="/zh-hant-tw/" data-page-link="" aria-label="Vorlinx"><img src="/assets/shared/vorlinx-brand-512.png" width="512" height="123" alt="Vorlinx"></a><p data-i18n="footerBlurb">把常用資料留在眼前，讓檔案與思路都有自己的位置。</p><span data-i18n="localLabel">本地 AI · 無訂閱 · 無雲端費用</span></div>
 <nav class="footer-column"><h2 data-i18n="footerProduct">產品</h2><button type="button" data-download data-i18n="download">下載</button><a href="/zh-hant-tw/about/" data-page-link="about" data-i18n="footerAbout">關於 Vorlinx</a></nav>
 <nav class="footer-column"><h2 data-i18n="footerHelp">說明</h2><a href="/zh-hant-tw/faq/" data-page-link="faq" data-i18n="footerFaq">常見問題</a><a href="/zh-hant-tw/support/" data-page-link="support" data-i18n="footerSupport">支援與聯絡</a></nav>
 <nav class="footer-column"><h2 data-i18n="footerMore">瞭解更多</h2><a href="/zh-hant-tw/privacy/" data-page-link="privacy" data-i18n="footerPrivacy">隱私權政策</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" data-i18n="footerLicense">使用者授權</a></nav>
-</div><div class="footer-bottom shell"><span>© Vorlinx</span><span data-i18n="tagline">檔案一眼看全，整理隨你所想。</span></div></footer>
+</div><div class="footer-bottom shell"><span>© Vorlinx</span><span data-i18n="tagline">檔案一眼看全，整理隨你所願。</span></div></footer>
   <dialog id="download-dialog" aria-labelledby="download-title"><div class="dialog-heading">
 <h2 id="download-title">Vorlinx · macOS</h2>
 <button type="button" id="close-download" aria-label="關閉下載說明" data-i18n-aria="closeDownload">×</button>
@@ -133,10 +136,10 @@ const messages = {
   "zh-Hans-CN": {
     "download": "下载",
     "languageLabel": "选择语言",
-    "localLabel": "本地 AI · 无需云端",
+    "localLabel": "本地 AI · 无订阅 · 无云端费用",
     "heroTitle": [
       "文件一眼看全，",
-      "整理随你所想。"
+      "整理随你所愿。"
     ],
     "heroCopy": [
       "将散落的资料放在一张画布上，",
@@ -153,16 +156,17 @@ const messages = {
       "需要时展开，继续眼前的思路。"
     ],
     "groupsCaption": "不同目录的相关资料，放进同一个分组。",
-    "readingKicker": "本地朗读",
+    "readingKicker": "本地 AI 摹音朗读",
     "readingTitle": [
       "让你喜欢的声音，",
       "读给你听。"
     ],
     "readingBody": [
-      "用一段参考音频，设置熟悉的声音。",
-      "朗读 PDF 与 Markdown，跟着高亮，接着上次继续。"
+      "用一段参考音频，或录下你喜欢的声音，",
+      "为你朗读 PDF 与 Markdown 文档、书籍。",
+      "高亮随声音轻轻呼吸，下次打开，接着上次听。"
     ],
-    "readingCaption": "跟随朗读高亮，用熟悉的声音继续阅读。",
+    "readingCaption": "跟随轻轻呼吸的高亮，让熟悉的声音继续为你朗读。",
     "filesKicker": "Markdown 编辑",
     "filesTitle": [
       "写下想法，",
@@ -185,7 +189,7 @@ const messages = {
     "sharingCaption": "汇集所需文件，为分享设置密码与有效期。",
     "privacyTitle": "私人的文件，自在的本地空间。",
     "privacyBody": "文件、语义索引与 AI 模型都留在设备上。整理、搜索与朗读，无需上传。",
-    "tagline": "文件一眼看全，整理随你所想。",
+    "tagline": "文件一眼看全，整理随你所愿。",
     "closeDownload": "关闭下载说明",
     "downloadPending": "即将登陆 Mac App Store。",
     "downloadDescription": "正式上架后，这里将前往 App Store 下载 Vorlinx。",
@@ -301,10 +305,10 @@ const messages = {
   "zh-Hant-TW": {
     "download": "下載",
     "languageLabel": "選擇語言",
-    "localLabel": "本地 AI · 無需雲端",
+    "localLabel": "本地 AI · 無訂閱 · 無雲端費用",
     "heroTitle": [
       "檔案一眼看全，",
-      "整理隨你所想。"
+      "整理隨你所願。"
     ],
     "heroCopy": [
       "將散落的資料放在一張畫布上，",
@@ -321,16 +325,17 @@ const messages = {
       "需要時展開，繼續眼前的思路。"
     ],
     "groupsCaption": "不同目錄的相關資料，放進同一個分組。",
-    "readingKicker": "本地朗讀",
+    "readingKicker": "本地 AI 摹音朗讀",
     "readingTitle": [
       "讓你喜歡的聲音，",
       "讀給你聽。"
     ],
     "readingBody": [
-      "用一段參考音訊，設定熟悉的聲音。",
-      "朗讀 PDF 與 Markdown，跟著醒目標示，接著上次繼續。"
+      "用一段參考音訊，或錄下你喜歡的聲音，",
+      "為你朗讀 PDF 與 Markdown 文件、書籍。",
+      "醒目標示隨聲音輕輕呼吸，下次開啟，接著上次聽。"
     ],
-    "readingCaption": "跟隨朗讀標示，用熟悉的聲音繼續閱讀。",
+    "readingCaption": "跟隨輕輕呼吸的醒目標示，讓熟悉的聲音繼續為你朗讀。",
     "filesKicker": "Markdown 編輯",
     "filesTitle": [
       "寫下想法，",
@@ -353,7 +358,7 @@ const messages = {
     "sharingCaption": "彙集所需檔案，為分享設定密碼與有效期限。",
     "privacyTitle": "私人的檔案，自在的本地空間。",
     "privacyBody": "檔案、語意索引與 AI 模型都留在裝置上。整理、搜尋與朗讀，無需上傳。",
-    "tagline": "檔案一眼看全，整理隨你所想。",
+    "tagline": "檔案一眼看全，整理隨你所願。",
     "closeDownload": "關閉下載說明",
     "downloadPending": "即將登陸 Mac App Store。",
     "downloadDescription": "正式上架後，這裡將前往 App Store 下載 Vorlinx。",
@@ -469,7 +474,7 @@ const messages = {
   "en-US": {
     "download": "Download",
     "languageLabel": "Choose language",
-    "localLabel": "Local AI · No cloud needed",
+    "localLabel": "Local AI · No subscription · No cloud fees",
     "heroTitle": [
       "Your files at a glance.",
       "Organized your way."
@@ -489,16 +494,17 @@ const messages = {
       "Open the group whenever you need more context."
     ],
     "groupsCaption": "Keep related files from different folders in one group.",
-    "readingKicker": "Local read aloud",
+    "readingKicker": "Local AI voice cloning",
     "readingTitle": [
       "A voice you love.",
       "Reading to you."
     ],
     "readingBody": [
-      "Use a reference audio clip to set up a familiar voice.",
-      "Listen to PDF and Markdown, follow the highlight and resume where you left off."
+      "Use a reference audio clip, or record a voice you love,",
+      "to read your PDF and Markdown documents and books aloud.",
+      "The highlight gently pulses with the voice. Pick up where you left off next time."
     ],
-    "readingCaption": "Follow the reading highlight and listen in a familiar voice.",
+    "readingCaption": "Follow the gently pulsing highlight as a familiar voice keeps reading to you.",
     "filesKicker": "Markdown editing",
     "filesTitle": [
       "Make a note.",

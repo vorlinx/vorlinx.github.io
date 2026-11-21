@@ -41,3 +41,6 @@
  .faq-preview{padding-top:36px}.faq-preview>h2{font-size:25px;margin-bottom:20px}.faq-preview summary{font-size:16px;padding:18px 0}.site-footer{margin-top:36px}.footer-grid{grid-template-columns:1fr 1fr;gap:32px;padding:40px 0}.footer-brand{grid-column:1/-1}.footer-brand img{width:170px}.footer-brand p{max-width:100%}.footer-bottom{flex-direction:column;gap:8px}.information-page{padding:30px 0 48px}.information-page h1{font-size:30px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+/* Keep the longer local-AI pricing note clear at narrow header widths. */
+@media(min-width:701px) and (max-width:900px){.local-label{max-width:220px;white-space:normal;text-align:right;line-height:1.6}}
+@media(max-width:700px){.local-label{white-space:normal;text-align:right;line-height:1.6}}

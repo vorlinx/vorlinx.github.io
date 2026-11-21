@@ -2,10 +2,10 @@ const messages = {
   "zh-Hans-CN": {
     "download": "下载",
     "languageLabel": "选择语言",
-    "localLabel": "本地 AI · 无需云端",
+    "localLabel": "本地 AI · 无订阅 · 无云端费用",
     "heroTitle": [
       "文件一眼看全，",
-      "整理随你所想。"
+      "整理随你所愿。"
     ],
     "heroCopy": [
       "将散落的资料放在一张画布上，",
@@ -22,16 +22,17 @@ const messages = {
       "需要时展开，继续眼前的思路。"
     ],
     "groupsCaption": "不同目录的相关资料，放进同一个分组。",
-    "readingKicker": "本地朗读",
+    "readingKicker": "本地 AI 摹音朗读",
     "readingTitle": [
       "让你喜欢的声音，",
       "读给你听。"
     ],
     "readingBody": [
-      "用一段参考音频，设置熟悉的声音。",
-      "朗读 PDF 与 Markdown，跟着高亮，接着上次继续。"
+      "用一段参考音频，或录下你喜欢的声音，",
+      "为你朗读 PDF 与 Markdown 文档、书籍。",
+      "高亮随声音轻轻呼吸，下次打开，接着上次听。"
     ],
-    "readingCaption": "跟随朗读高亮，用熟悉的声音继续阅读。",
+    "readingCaption": "跟随轻轻呼吸的高亮，让熟悉的声音继续为你朗读。",
     "filesKicker": "Markdown 编辑",
     "filesTitle": [
       "写下想法，",
@@ -54,7 +55,7 @@ const messages = {
     "sharingCaption": "汇集所需文件，为分享设置密码与有效期。",
     "privacyTitle": "私人的文件，自在的本地空间。",
     "privacyBody": "文件、语义索引与 AI 模型都留在设备上。整理、搜索与朗读，无需上传。",
-    "tagline": "文件一眼看全，整理随你所想。",
+    "tagline": "文件一眼看全，整理随你所愿。",
     "closeDownload": "关闭下载说明",
     "downloadPending": "即将登陆 Mac App Store。",
     "downloadDescription": "正式上架后，这里将前往 App Store 下载 Vorlinx。",
@@ -170,10 +171,10 @@ const messages = {
   "zh-Hant-TW": {
     "download": "下載",
     "languageLabel": "選擇語言",
-    "localLabel": "本地 AI · 無需雲端",
+    "localLabel": "本地 AI · 無訂閱 · 無雲端費用",
     "heroTitle": [
       "檔案一眼看全，",
-      "整理隨你所想。"
+      "整理隨你所願。"
     ],
     "heroCopy": [
       "將散落的資料放在一張畫布上，",
@@ -190,16 +191,17 @@ const messages = {
       "需要時展開，繼續眼前的思路。"
     ],
     "groupsCaption": "不同目錄的相關資料，放進同一個分組。",
-    "readingKicker": "本地朗讀",
+    "readingKicker": "本地 AI 摹音朗讀",
     "readingTitle": [
       "讓你喜歡的聲音，",
       "讀給你聽。"
     ],
     "readingBody": [
-      "用一段參考音訊，設定熟悉的聲音。",
-      "朗讀 PDF 與 Markdown，跟著醒目標示，接著上次繼續。"
+      "用一段參考音訊，或錄下你喜歡的聲音，",
+      "為你朗讀 PDF 與 Markdown 文件、書籍。",
+      "醒目標示隨聲音輕輕呼吸，下次開啟，接著上次聽。"
     ],
-    "readingCaption": "跟隨朗讀標示，用熟悉的聲音繼續閱讀。",
+    "readingCaption": "跟隨輕輕呼吸的醒目標示，讓熟悉的聲音繼續為你朗讀。",
     "filesKicker": "Markdown 編輯",
     "filesTitle": [
       "寫下想法，",
@@ -222,7 +224,7 @@ const messages = {
     "sharingCaption": "彙集所需檔案，為分享設定密碼與有效期限。",
     "privacyTitle": "私人的檔案，自在的本地空間。",
     "privacyBody": "檔案、語意索引與 AI 模型都留在裝置上。整理、搜尋與朗讀，無需上傳。",
-    "tagline": "檔案一眼看全，整理隨你所想。",
+    "tagline": "檔案一眼看全，整理隨你所願。",
     "closeDownload": "關閉下載說明",
     "downloadPending": "即將登陸 Mac App Store。",
     "downloadDescription": "正式上架後，這裡將前往 App Store 下載 Vorlinx。",
@@ -338,7 +340,7 @@ const messages = {
   "en-US": {
     "download": "Download",
     "languageLabel": "Choose language",
-    "localLabel": "Local AI · No cloud needed",
+    "localLabel": "Local AI · No subscription · No cloud fees",
     "heroTitle": [
       "Your files at a glance.",
       "Organized your way."
@@ -358,16 +360,17 @@ const messages = {
       "Open the group whenever you need more context."
     ],
     "groupsCaption": "Keep related files from different folders in one group.",
-    "readingKicker": "Local read aloud",
+    "readingKicker": "Local AI voice cloning",
     "readingTitle": [
       "A voice you love.",
       "Reading to you."
     ],
     "readingBody": [
-      "Use a reference audio clip to set up a familiar voice.",
-      "Listen to PDF and Markdown, follow the highlight and resume where you left off."
+      "Use a reference audio clip, or record a voice you love,",
+      "to read your PDF and Markdown documents and books aloud.",
+      "The highlight gently pulses with the voice. Pick up where you left off next time."
     ],
-    "readingCaption": "Follow the reading highlight and listen in a familiar voice.",
+    "readingCaption": "Follow the gently pulsing highlight as a familiar voice keeps reading to you.",
     "filesKicker": "Markdown editing",
     "filesTitle": [
       "Make a note.",
