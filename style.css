@@ -104,3 +104,15 @@ main .shell,footer.shell{width:min(1120px,calc(100% - 176px))}
 @media(max-width:700px){.search-story{padding:28px 0}.search-story>.story-copy{margin-bottom:22px}}
 
 .story-copy .backup-promise:not(.eyebrow){font-weight:500;color:var(--ink);margin:0 0 10px}
+
+/* Keep the full header available while the document scrolls beneath it. */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#fff;
+  box-shadow:0 8px 24px -20px rgb(24 32 44 / 18%);
+}
+.site-header>.masthead{margin-block:0}
+html{scroll-padding-top:110px}
+@media(max-width:700px){html{scroll-padding-top:190px}}

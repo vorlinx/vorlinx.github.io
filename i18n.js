@@ -61,7 +61,6 @@ const messages = {
       "局域网访问由你主动开启。"
     ],
     "tagline": "文件一眼看全，整理随你所想。",
-    "conceptNote": "官网概念稿 · 画面待替换为实拍",
     "closeDownload": "关闭下载说明",
     "downloadPending": "即将登陆 Mac App Store。",
     "downloadDescription": "正式上架后，这里将前往 App Store 下载 Vorlinx。",
@@ -166,7 +165,6 @@ const messages = {
       "區域網路存取由你主動開啟。"
     ],
     "tagline": "檔案一眼看全，整理隨你所想。",
-    "conceptNote": "官網概念稿 · 畫面待替換為實拍",
     "closeDownload": "關閉下載說明",
     "downloadPending": "即將登陸 Mac App Store。",
     "downloadDescription": "正式上架後，這裡將前往 App Store 下載 Vorlinx。",
@@ -271,7 +269,6 @@ const messages = {
       "Local network access starts only when you enable it."
     ],
     "tagline": "Your files at a glance. Organized your way.",
-    "conceptNote": "Website concept · Product images are illustrative",
     "closeDownload": "Close download information",
     "downloadPending": "Coming to the Mac App Store.",
     "downloadDescription": "Once available, this button will open Vorlinx on the App Store.",
