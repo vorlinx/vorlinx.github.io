@@ -28,7 +28,7 @@ for(const page of ['','faq','privacy','support','about','404']){
    getAttribute(k){return this[k]},setAttribute(k,v){this[k]=v},closest(){return {querySelector(){return source}}}};
  });
  const historyCalls=[],preloads=[];
- const context={messages:catalog.messages,URL,location:{href:`https://vorlinx.github.io/zh-hans-cn/${page?page+'/':''}`},
+ const context={messages:catalog.messages,URL,location:{href:`https://vorlinx.dekuan.org/zh-hans-cn/${page?page+'/':''}`},
   document:{documentElement:{lang:'zh-Hans-CN'},body:{dataset:{page}},querySelectorAll(s){return s==='[data-screenshot]'?images:[]},querySelector(s){return s==='.hero-shot [data-screenshot]'?images[0]||null:nodes.get(s)}},
   languageOptions:[],languageNames:{'en-US':'English','zh-Hans-CN':'简体中文','zh-Hant-TW':'繁體中文'},intro:null,renderLocalizedText(){},
   history:{replaceState(...args){historyCalls.push(args)}},Image:class {decode(){preloads.push(this);return Promise.resolve()}}};

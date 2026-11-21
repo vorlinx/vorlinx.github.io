@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vorlinx.github.io/sitemap.xml
+Sitemap: https://vorlinx.dekuan.org/sitemap.xml

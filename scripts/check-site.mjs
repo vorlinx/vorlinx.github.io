@@ -40,10 +40,10 @@ for(const language of config.languages){
 // Exercise URL selection including legacy query links without a browser.
 const routing=source.slice(source.indexOf('const languageAliases'),source.indexOf('const screenshotLabels'));
 for(const [href,expected]of [
- ['https://vorlinx.github.io/en-us/','en-US'],
- ['https://vorlinx.github.io/zh-hant-tw/','zh-Hant-TW'],
- ['https://vorlinx.github.io/','zh-Hans-CN'],
- ['https://vorlinx.github.io/?lang=zh-TW','zh-Hant-TW']]){
+ ['https://vorlinx.dekuan.org/en-us/','en-US'],
+ ['https://vorlinx.dekuan.org/zh-hant-tw/','zh-Hant-TW'],
+ ['https://vorlinx.dekuan.org/','zh-Hans-CN'],
+ ['https://vorlinx.dekuan.org/?lang=zh-TW','zh-Hant-TW']]){
  const context={URL,location:{href},document:{documentElement:{lang:'zh-Hans-CN'},body:{dataset:{}}}};
  vm.createContext(context);vm.runInContext(routing,context);
  assert.equal(context.languageFromURL(),expected);

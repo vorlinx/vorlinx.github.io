@@ -1,5 +1,9 @@
 {
-  "baseUrl": "https://vorlinx.github.io/",
+  "baseUrl": "https://vorlinx.dekuan.org/",
   "defaultLanguage": "zh-Hans-CN",
-  "languages": ["zh-Hans-CN", "zh-Hant-TW", "en-US"]
+  "languages": [
+    "zh-Hans-CN",
+    "zh-Hant-TW",
+    "en-US"
+  ]
 }

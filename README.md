@@ -83,3 +83,5 @@ assets/en-us/
 ## GitHub Pages
 
 将仓库推送至 GitHub，Settings → Pages 发布源选择 `main`、根目录 `/`。`.nojekyll` 保证静态文件直接提供。网站地址以 `site.config.json` 配置为准。
+
+当前正式域名为 https://vorlinx.dekuan.org/，仓库根目录 `CNAME` 为 `vorlinx.dekuan.org`。Google Search Console 应使用这个域名的网址前缀，提交 https://vorlinx.dekuan.org/sitemap.xml；旧域名若已有收录，还需在平台完成相应迁移检查。
