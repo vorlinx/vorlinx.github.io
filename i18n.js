@@ -87,6 +87,7 @@ const messages = {
     ],
     "importCaption": "扫码或打开链接，从手机导入文件",
     "backupKicker": "加密备份",
+    "backupPromise": "先加密，再保存。",
     "backupTitle": [
       "安心整理，",
       "也妥善保存。"
@@ -191,6 +192,7 @@ const messages = {
     ],
     "importCaption": "掃碼或開啟連結，從手機匯入檔案",
     "backupKicker": "加密備份",
+    "backupPromise": "先加密，再儲存。",
     "backupTitle": [
       "安心整理，",
       "也妥善保存。"
@@ -295,6 +297,7 @@ const messages = {
     ],
     "importCaption": "Scan a QR code or open a link to import files from your phone",
     "backupKicker": "Encrypted backup",
+    "backupPromise": "Encrypt first. Then save.",
     "backupTitle": [
       "Your files,",
       "well looked after."
