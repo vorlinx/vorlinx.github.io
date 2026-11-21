@@ -46,8 +46,8 @@ const messages = {
     "filesCaption": "《本周安排》编辑与任务清单 · 概念示意",
     "sharingKicker": "局域网分享",
     "sharingTitle": [
-      "整理好了，",
-      "就分享出去。"
+      "资料散落各处，",
+      "也能一起打包分享。"
     ],
     "sharingBody": [
       "把一份或多份文件一起分享，设置密码与有效期。",
@@ -151,8 +151,8 @@ const messages = {
     "filesCaption": "《本週安排》編輯與任務清單 · 概念示意",
     "sharingKicker": "區域網路分享",
     "sharingTitle": [
-      "整理好了，",
-      "就分享出去。"
+      "資料散落各處，",
+      "也能一起打包分享。"
     ],
     "sharingBody": [
       "把一份或多份檔案一起分享，設定密碼與有效期限。",
@@ -256,8 +256,8 @@ const messages = {
     "filesCaption": "This week, with an editable checklist · Concept illustration",
     "sharingKicker": "Local network sharing",
     "sharingTitle": [
-      "Ready to share.",
-      " On your terms."
+      "Files in different folders.",
+      "Shared in one package."
     ],
     "sharingBody": [
       "Share one file or a collection with a password and expiry.",
