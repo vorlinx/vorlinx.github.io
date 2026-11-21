@@ -25,3 +25,49 @@ downloadDialog.addEventListener('click', event => {
   const bounds = downloadDialog.getBoundingClientRect();
   if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) downloadDialog.close();
 });
+
+// Use the full-resolution PNG rather than the thumbnail selected by <picture>.
+const screenshotImages = document.querySelectorAll('img[data-screenshot]');
+if (screenshotImages.length) {
+  const viewer = document.createElement('dialog');
+  viewer.className = 'screenshot-viewer';
+  viewer.innerHTML = '<button class="screenshot-close" type="button" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button><img class="screenshot-enlarged" alt="">';
+  document.body.append(viewer);
+  const enlarged = viewer.querySelector('img');
+  const close = viewer.querySelector('button');
+  let previousOverflow;
+  let opener;
+
+  const openScreenshot = image => {
+    const english = document.documentElement.lang.startsWith('en');
+    viewer.setAttribute('aria-label', english ? 'Enlarged screenshot' : '截图预览');
+    close.setAttribute('aria-label', english ? 'Close screenshot' : '关闭截图');
+    enlarged.src = image.src;
+    enlarged.alt = image.alt;
+    opener = image;
+    previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    viewer.showModal();
+  };
+
+  screenshotImages.forEach(image => {
+    image.tabIndex = 0;
+    image.setAttribute('role', 'button');
+    image.setAttribute('aria-haspopup', 'dialog');
+    image.addEventListener('click', () => openScreenshot(image));
+    image.addEventListener('keydown', event => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      openScreenshot(image);
+    });
+  });
+  close.addEventListener('click', () => viewer.close());
+  viewer.addEventListener('click', event => {
+    if (event.target === viewer) viewer.close();
+  });
+  viewer.addEventListener('close', () => {
+    document.body.style.overflow = previousOverflow;
+    enlarged.removeAttribute('src');
+    opener?.focus({ preventScroll: true });
+  });
+}

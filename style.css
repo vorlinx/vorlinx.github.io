@@ -40,6 +40,15 @@
  .local-end{margin-top:28px;padding:25px 0;gap:13px;flex-wrap:wrap}.end-lock{padding:10px}.end-lock svg{width:18px;height:18px}.local-end>div{flex:1;min-width:0}.local-end h2{font-size:16px;margin-bottom:9px}.local-end .end-note{font-size:12px;flex:auto;margin-left:51px}.local-end .end-note br{display:none}
  .faq-preview{padding-top:36px}.faq-preview>h2{font-size:25px;margin-bottom:20px}.faq-preview summary{font-size:16px;padding:18px 0}.site-footer{margin-top:36px}.footer-grid{grid-template-columns:1fr 1fr;gap:32px;padding:40px 0}.footer-brand{grid-column:1/-1}.footer-brand img{width:170px}.footer-brand p{max-width:100%}.footer-bottom{flex-direction:column;gap:8px}.information-page{padding:30px 0 48px}.information-page h1{font-size:30px}
 }
+img[data-screenshot]{cursor:zoom-in}img[data-screenshot]:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+.screenshot-viewer{position:fixed;inset:0;width:100%;max-width:none;height:100%;height:100dvh;max-height:none;margin:0;padding:72px 32px 32px;border:0;background:transparent;overflow:hidden}
+.screenshot-viewer[open]{display:flex;align-items:center;justify-content:center;animation:screenshot-appear .22s ease-out}
+.screenshot-viewer::backdrop{background:rgb(38 45 54 / 26%);backdrop-filter:blur(3px)}
+.screenshot-enlarged{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;border-radius:12px;box-shadow:0 16px 60px rgb(24 32 44 / 18%)}
+.screenshot-close{position:absolute;top:18px;right:22px;display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:12px;border:0;border-radius:50%;background:#f7f7f7;color:#626970;cursor:pointer;transition:background .18s,color .18s,transform .18s}
+.screenshot-close svg{width:20px;height:20px;stroke-width:2}.screenshot-close:focus,.screenshot-close:focus-visible{outline:none}.screenshot-close:focus-visible{background:#ffffff;color:#20252b}.screenshot-close:hover{background:#ffffff;color:#20252b;transform:scale(1.05)}.screenshot-close:active{transform:scale(.96)}
+@keyframes screenshot-appear{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:scale(1)}}
+@media(max-width:700px){.screenshot-viewer{padding:72px 12px 20px}.screenshot-close{right:16px}.screenshot-enlarged{border-radius:8px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 /* Keep the longer local-AI pricing note clear at narrow header widths. */
 @media(min-width:701px) and (max-width:900px){.local-label{max-width:220px;white-space:normal;text-align:right;line-height:1.6}}
