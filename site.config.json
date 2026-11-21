@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://vorlinx.github.io/",
+  "defaultLanguage": "zh-Hans-CN",
+  "languages": ["zh-Hans-CN", "zh-Hant-TW", "en-US"]
+}

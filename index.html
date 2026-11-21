@@ -3,49 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Vorlinx，纯本地的私人文件整理工具。文件一眼看全，整理随你所想。将散落的资料放在一张画布上，自由连接、分组，随时阅读与编辑。">
-  <title>Vorlinx · 文件一眼看全，整理随你所想。</title>
-  <link rel="icon" href="assets/shared/vorlinx-icon-64.png">
-  <link rel="stylesheet" href="canvas.css">
-  <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="layout.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-  <script src="i18n.js" defer></script>
+  <link rel="icon" href="/assets/shared/vorlinx-icon-64.png">
+  <link rel="stylesheet" href="/canvas.css">
+  <link rel="stylesheet" href="/base.css">
+  <link rel="stylesheet" href="/layout.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+  <script src="/i18n.js" defer></script>
+<!-- SEO:START -->
+  <title>Vorlinx｜内置本地 AI 的 macOS 文件管理应用</title>
+  <meta name="description" content="Vorlinx 是一款 macOS 纯本地个人文件管理应用。连接、分组不同文件夹中的资料，支持自然语言搜索、文档阅读与自定义音色朗读，以及极简 Markdown 编辑。 文件与 AI 模型都在你的设备上，无需上传，离线使用。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vorlinx.github.io/zh-hans-cn/">
+  <link rel="alternate" hreflang="zh-Hans-CN" href="https://vorlinx.github.io/zh-hans-cn/">
+  <link rel="alternate" hreflang="zh-Hant-TW" href="https://vorlinx.github.io/zh-hant-tw/">
+  <link rel="alternate" hreflang="en-US" href="https://vorlinx.github.io/en-us/">
+  <link rel="alternate" hreflang="x-default" href="https://vorlinx.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vorlinx">
+  <meta property="og:title" content="Vorlinx｜内置本地 AI 的 macOS 文件管理应用">
+  <meta property="og:description" content="Vorlinx 是一款 macOS 纯本地个人文件管理应用。连接、分组不同文件夹中的资料，支持自然语言搜索、文档阅读与自定义音色朗读，以及极简 Markdown 编辑。 文件与 AI 模型都在你的设备上，无需上传，离线使用。">
+  <meta property="og:url" content="https://vorlinx.github.io/zh-hans-cn/">
+  <meta property="og:image" content="https://vorlinx.github.io/assets/zh-hans-cn/link.png">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vorlinx｜内置本地 AI 的 macOS 文件管理应用">
+  <meta name="twitter:description" content="Vorlinx 是一款 macOS 纯本地个人文件管理应用。连接、分组不同文件夹中的资料，支持自然语言搜索、文档阅读与自定义音色朗读，以及极简 Markdown 编辑。 文件与 AI 模型都在你的设备上，无需上传，离线使用。">
+  <meta name="twitter:image" content="https://vorlinx.github.io/assets/zh-hans-cn/link.png">
+  <script type="application/ld+json" id="site-schema">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://vorlinx.github.io/#website","name":"Vorlinx","url":"https://vorlinx.github.io/zh-hans-cn/","inLanguage":"zh-Hans-CN"},{"@type":"SoftwareApplication","@id":"https://vorlinx.github.io/#software","name":"Vorlinx","url":"https://vorlinx.github.io/zh-hans-cn/","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","description":"Vorlinx 是一款 macOS 纯本地个人文件管理应用。连接、分组不同文件夹中的资料，支持自然语言搜索、文档阅读与自定义音色朗读，以及极简 Markdown 编辑。 文件与 AI 模型都在你的设备上，无需上传，离线使用。","inLanguage":"zh-Hans-CN","screenshot":"https://vorlinx.github.io/assets/zh-hans-cn/link.png"}]}</script>
+  <!-- SEO:END -->
 </head>
 <body>
   <div class="site-header">
-  <header class="masthead shell"><div class="brand"><img class="brand-image" src="assets/shared/vorlinx-brand-512.png" width="512" height="123" alt="Vorlinx"></div>
+  <header class="masthead shell"><div class="brand"><img class="brand-image" src="/assets/shared/vorlinx-brand-512.png" width="512" height="123" alt="Vorlinx"></div>
 <div class="header-actions">
-<p class="local-label"><span data-icon="lock"></span><span data-i18n="localLabel">纯本地 · 无需云端</span></p>
+<p class="local-label"><span data-icon="lock"></span><span data-i18n="localLabel">本地 AI · 无需云端</span></p>
 <button class="download-button" data-download aria-haspopup="dialog" aria-label="下载" data-i18n-aria="download"><span data-i18n="download">下载</span></button><div class="language-control">
 <span class="sr-only" id="language-label" data-i18n="languageLabel">选择语言</span><button id="language" class="language-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu" aria-labelledby="language-label language-current"><span id="language-current">简体中文</span><svg viewbox="0 0 16 16" aria-hidden="true"><path d="m5 6 3 3 3-3"></path></svg></button><div id="language-menu" class="language-menu" role="menu" aria-labelledby="language-label" hidden>
-<button type="button" role="menuitemradio" aria-checked="true" data-language="zh-Hans-CN" tabindex="-1">简体中文</button><button type="button" role="menuitemradio" aria-checked="false" data-language="zh-Hant-TW" tabindex="-1">繁體中文</button><button type="button" role="menuitemradio" aria-checked="false" data-language="en-US" tabindex="-1">English</button>
+<a href="/zh-hans-cn/" role="menuitemradio" aria-checked="true" data-language="zh-Hans-CN" tabindex="-1">简体中文</a><a href="/zh-hant-tw/" role="menuitemradio" aria-checked="false" data-language="zh-Hant-TW" tabindex="-1">繁體中文</a><a href="/en-us/" role="menuitemradio" aria-checked="false" data-language="en-US" tabindex="-1">English</a>
 </div>
 </div>
 </div></header>
   </div>
+  <noscript><nav class="no-script-languages" aria-label="Languages"><a href="/zh-hans-cn/" lang="zh-Hans-CN">简体中文</a><a href="/zh-hant-tw/" lang="zh-Hant-TW">繁體中文</a><a href="/en-us/" lang="en-US">English</a></nav></noscript>
   <main>
     <section class="intro shell">
       <h1 data-i18n="heroTitle">文件一眼看全，<br>整理随你所想。</h1>
       <p class="intro-copy" data-i18n="heroCopy">将散落的资料放在一张画布上，<br>自由连接、分组，随时阅读与编辑。</p>
-      <p class="local-promise" data-i18n="localPromise">文件与 AI 都在你的设备上，无需上传，离线使用。</p>
+      <p class="product-definition" data-i18n="productDefinition">Vorlinx 是一款 macOS 纯本地个人文件管理应用。连接、分组不同文件夹中的资料，支持自然语言搜索、文档阅读与自定义音色朗读，以及极简 Markdown 编辑。 文件与 AI 模型都在你的设备上，无需上传，离线使用。</p>
     </section>
 
-    <figure class="hero-shot" aria-label="个人资料画布：工作资料、常用文件和最近在读的书" data-i18n-aria="heroImageLabel"><img src="assets/zh-hans-cn/link.png" data-screenshot="link" alt="正在做的事 · 每天都要用 · 最近在读｜概念示意，待替换为真实截图" width="1600" height="1000" decoding="async" loading="eager" fetchpriority="high"><figcaption data-i18n="heroCaption">正在做的事 · 每天都要用 · 最近在读｜概念示意，待替换为真实截图</figcaption></figure>
-<p class="search-hint shell" data-i18n="searchHint">想不起文件名？描述你记得的内容，用本地语义搜索找回来。</p>
+    <figure class="hero-shot" aria-label="个人资料画布：工作资料、常用文件和最近在读的书" data-i18n-aria="heroImageLabel"><img src="/assets/zh-hans-cn/link.png" data-screenshot="link" alt="个人资料画布：工作资料、常用文件和最近在读的书" width="1440" height="900" decoding="async" loading="eager" fetchpriority="high" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"></figure>
 <div class="feature-story shell">
-<section class="story-row image-left" aria-labelledby="groups-title"><figure class="visual groups-visual"><img src="assets/zh-hans-cn/groups.png" data-screenshot="groups" alt="展开「案例与参考」 · 概念示意" width="1200" height="800" decoding="async" loading="lazy"><figcaption data-i18n="groupsCaption">展开「案例与参考」 · 概念示意</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="groupsKicker">分组</p><h2 id="groups-title" data-i18n="groupsTitle">相关资料，<br>就在旁边。</h2><p data-i18n="groupsBody">把不同文件夹里的资料，按主题放进同一个分组。<br>需要时展开，继续眼前的思路。</p></div></section>
-<section class="story-row image-right" aria-labelledby="pdf-title"><figure class="visual pdf-visual"><div class="screenshot-frame"><img src="assets/zh-hans-cn/pdf.png" data-screenshot="pdf" alt="《老人与海》批注与便签" width="1200" height="800" decoding="async" loading="lazy"></div><figcaption data-i18n="pdfCaption">《老人与海》批注与便签</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="pdfKicker">PDF 阅读</p><h2 id="pdf-title" data-i18n="pdfTitle">读到哪里，<br>想法就留在哪里。</h2><p data-i18n="pdfBody">高亮、下划线、删除线，还有便签。<br>把重要的段落和自己的理解，一起留下。</p></div></section>
-<section class="story-row image-left" aria-labelledby="files-title"><figure class="visual files-visual"><img src="assets/zh-hans-cn/files.png" data-screenshot="files" alt="《本周安排》编辑与任务清单 · 概念示意" width="1200" height="800" decoding="async" loading="lazy"><figcaption data-i18n="filesCaption">《本周安排》编辑与任务清单 · 概念示意</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="filesKicker">Markdown 编辑</p><h2 id="files-title" data-i18n="filesTitle">写下想法，<br>也安排好这一周。</h2><p data-i18n="filesBody">编辑笔记，勾选任务，把想法写成自己的内容。<br>需要分享或留存时，轻松导出 PDF。</p></div></section>
-<section class="story-row image-right" aria-labelledby="reading-title"><figure class="visual reading-visual"><div class="screenshot-frame"><img src="assets/zh-hans-cn/reading.png" data-screenshot="reading" alt="参考声音与朗读高亮 · 概念示意，不播放音频" width="1200" height="800" decoding="async" loading="lazy"></div><figcaption data-i18n="readingCaption">参考声音与朗读高亮 · 概念示意，不播放音频</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="readingKicker">本地朗读</p><h2 id="reading-title" data-i18n="readingTitle">让你喜欢的声音，<br>读给你听。</h2><p data-i18n="readingBody">用一段参考音频，设置熟悉的声音。<br>朗读 PDF 与 Markdown，跟着高亮，接着上次继续。</p></div></section>
+<section class="story-row image-left" aria-labelledby="groups-title"><figure class="visual groups-visual"><img src="/assets/zh-hans-cn/groups.png" data-screenshot="groups" alt="不同目录的相关资料，放进同一个分组。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"><figcaption data-i18n="groupsCaption">不同目录的相关资料，放进同一个分组。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="groupsKicker">分组</p><h2 id="groups-title" data-i18n="groupsTitle">相关资料，<br>就在旁边。</h2><p data-i18n="groupsBody">把不同文件夹里的资料，按主题放进同一个分组。<br>需要时展开，继续眼前的思路。</p></div></section>
+<section class="story-row image-right" aria-labelledby="pdf-title"><figure class="visual pdf-visual"><div class="screenshot-frame"><img src="/assets/zh-hans-cn/pdf.png" data-screenshot="pdf" alt="标记重要段落，把想法留在便签里。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"></div><figcaption data-i18n="pdfCaption">标记重要段落，把想法留在便签里。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="pdfKicker">PDF 阅读</p><h2 id="pdf-title" data-i18n="pdfTitle">读到哪里，<br>想法就留在哪里。</h2><p data-i18n="pdfBody">高亮、下划线、删除线，还有便签。<br>把重要的段落和自己的理解，一起留下。</p></div></section>
+<section class="story-row image-left" aria-labelledby="files-title"><figure class="visual files-visual"><img src="/assets/zh-hans-cn/files.png" data-screenshot="files" alt="写下本周安排，逐项完成手边的任务。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"><figcaption data-i18n="filesCaption">写下本周安排，逐项完成手边的任务。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="filesKicker">Markdown 编辑</p><h2 id="files-title" data-i18n="filesTitle">写下想法，<br>也安排好这一周。</h2><p data-i18n="filesBody">编辑笔记，勾选任务，把想法写成自己的内容。<br>需要分享或留存时，轻松导出 PDF。</p></div></section>
+<section class="story-row image-right" aria-labelledby="reading-title"><figure class="visual reading-visual"><div class="screenshot-frame"><img src="/assets/zh-hans-cn/reading.png" data-screenshot="reading" alt="跟随朗读高亮，用熟悉的声音继续阅读。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"></div><figcaption data-i18n="readingCaption">跟随朗读高亮，用熟悉的声音继续阅读。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="readingKicker">本地朗读</p><h2 id="reading-title" data-i18n="readingTitle">让你喜欢的声音，<br>读给你听。</h2><p data-i18n="readingBody">用一段参考音频，设置熟悉的声音。<br>朗读 PDF 与 Markdown，跟着高亮，接着上次继续。</p></div></section>
 <section class="search-story" aria-labelledby="search-title">
-<div class="story-copy"><p class="eyebrow" data-i18n="searchKicker">自然语言搜索</p><h2 id="search-title" data-i18n="searchTitle">想不起名字，描述就好。</h2><p data-i18n="searchBody">描述你记得的内容，从本地资料中找回文字、文档和图片。</p></div>
-<figure class="visual search-visual"><img src="assets/zh-hans-cn/search.png" data-screenshot="search" alt="自然语言搜索与预设结果 · 概念示意" width="1200" height="600" decoding="async" loading="lazy"><figcaption data-i18n="searchCaption">自然语言搜索与预设结果 · 概念示意</figcaption></figure>
+<div class="story-copy"><p class="eyebrow" data-i18n="searchKicker">自然语言搜索</p><h2 id="search-title" data-i18n="searchTitle">想不起名字，描述就好。</h2><p data-i18n="searchBody">用自然语言描述你记得的内容，从本地资料库中找回文字、文档和图片。</p></div>
+<figure class="visual search-visual"><img src="/assets/zh-hans-cn/search.png" data-screenshot="search" alt="记得内容，就有找回资料的线索。" width="1453" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1453,900],&quot;zh-Hant-TW&quot;:[1453,900],&quot;en-US&quot;:[1453,900]}"><figcaption data-i18n="searchCaption">记得内容，就有找回资料的线索。</figcaption></figure>
 </section>
-<section class="story-row image-left" aria-labelledby="import-title"><figure class="visual import-visual"><img src="assets/zh-hans-cn/import.png" data-screenshot="import" alt="扫码或打开链接，从手机导入文件" width="1200" height="800" decoding="async" loading="lazy"><figcaption data-i18n="importCaption">扫码或打开链接，从手机导入文件</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="importKicker">跨设备导入</p><h2 id="import-title" data-i18n="importTitle">手机里的资料，<br>直接送到电脑。</h2><p data-i18n="importBody">手机或 Windows 电脑，连接同一局域网。<br>扫码或打开链接，把文件导入 Vorlinx。</p></div></section>
-<section class="sharing-story" aria-labelledby="sharing-title"><div class="story-copy"><p class="eyebrow" data-i18n="sharingKicker">局域网分享</p><h2 id="sharing-title" data-i18n="sharingTitle">资料散落各处，<br>也能一起打包分享。</h2><p data-i18n="sharingBody">把一份或多份文件一起分享，设置密码与有效期。<br>对方通过浏览器访问，你随时可以停止。</p></div><div class="sharing-pair"><figure class="visual sharing-visual"><img src="assets/zh-hans-cn/sharing.png" data-screenshot="sharing" alt="分享方：选择资料、设置密码与有效期 · 概念示意" width="1200" height="800" decoding="async" loading="lazy"><figcaption data-i18n="sharingCaption">分享方：选择资料、设置密码与有效期 · 概念示意</figcaption></figure><figure class="visual recipient-visual"><img src="assets/zh-hans-cn/recipient.png" data-screenshot="recipient" alt="接收方：在浏览器里查看、下载资料 · 概念示意" width="1200" height="800" decoding="async" loading="lazy"><figcaption data-i18n="recipientCaption">接收方：在浏览器里查看、下载资料 · 概念示意</figcaption></figure></div></section>
-<section class="story-row image-left" aria-labelledby="backup-title"><figure class="visual backup-visual"><img src="assets/zh-hans-cn/backup.png" data-screenshot="backup" alt="加密备份与保存位置 · 概念示意" width="1200" height="800" decoding="async" loading="lazy"><figcaption data-i18n="backupCaption">加密备份与保存位置 · 概念示意</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="backupKicker">加密备份</p><h2 id="backup-title" data-i18n="backupTitle">安心整理，<br>也妥善保存。</h2><p class="backup-promise" data-i18n="backupPromise">先加密，再保存。</p><p data-i18n="backupBody">自动加密备份到你指定的目录。<br>选择本地目录，或由你已有的同步服务同步的文件夹。</p></div></section>
+<section class="story-row image-left" aria-labelledby="import-title"><figure class="visual import-visual"><img src="/assets/zh-hans-cn/import.png" data-screenshot="import" alt="扫码或打开链接，从手机导入文件。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"><figcaption data-i18n="importCaption">扫码或打开链接，从手机导入文件。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="importKicker">跨设备导入</p><h2 id="import-title" data-i18n="importTitle">手机里的资料，<br>直接送到电脑。</h2><p data-i18n="importBody">手机或 Windows 电脑，连接同一局域网。<br>扫码或打开链接，把文件导入 Vorlinx。</p></div></section>
+<section class="sharing-story" aria-labelledby="sharing-title"><div class="story-copy"><p class="eyebrow" data-i18n="sharingKicker">局域网分享</p><h2 id="sharing-title" data-i18n="sharingTitle">资料散落各处，<br>也能一起打包分享。</h2><p data-i18n="sharingBody">把一份或多份文件一起分享，设置密码与有效期。<br>对方通过浏览器访问，你随时可以停止。</p></div><div class="sharing-pair"><figure class="visual sharing-visual"><img src="/assets/zh-hans-cn/sharing.png" data-screenshot="sharing" alt="汇集所需文件，为分享设置密码与有效期。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"><figcaption data-i18n="sharingCaption">汇集所需文件，为分享设置密码与有效期。</figcaption></figure><figure class="visual recipient-visual"><img src="/assets/zh-hans-cn/recipient.png" data-screenshot="recipient" alt="通过浏览器访问，按需预览或下载文件。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"><figcaption data-i18n="recipientCaption">通过浏览器访问，按需预览或下载文件。</figcaption></figure></div></section>
+<section class="story-row image-left" aria-labelledby="backup-title"><figure class="visual backup-visual"><img src="/assets/zh-hans-cn/backup.png" data-screenshot="backup" alt="先加密，再将备份保存到你指定的目录。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}"><figcaption data-i18n="backupCaption">先加密，再将备份保存到你指定的目录。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="backupKicker">加密备份</p><h2 id="backup-title" data-i18n="backupTitle">安心整理，<br>也妥善保存。</h2><p class="backup-promise" data-i18n="backupPromise">先加密，再保存。</p><p data-i18n="backupBody">自动加密备份到你指定的目录。<br>选择本地目录，或由你已有的同步服务同步的文件夹。</p><p class="roadmap-note" data-i18n="backupRoadmap">后续计划：未来版本将逐步支持将加密备份同步到多个云存储服务。</p></div></section>
 </div>
 
     <section class="local-end shell"><span class="end-lock" data-icon="lock"></span><div>
@@ -53,9 +73,19 @@
 <p data-i18n="privacyBody">文件、语义索引与 AI 模型都留在设备上。整理、搜索与朗读，无需上传。</p>
 </div>
 <p class="end-note" data-i18n="privacyNote">模型需提前准备。<br>局域网访问由你主动开启。</p></section>
+<section class="faq-preview shell" aria-labelledby="faq-preview-title"><h2 id="faq-preview-title" data-i18n="footerFaq">常见问题</h2>
+<details open><summary><span data-i18n="faqLocalQ">AI 功能需要上传文件吗？</span></summary><div class="faq-answer"><p data-i18n="faqLocalA">文件分析、语义索引与朗读在本地运行。使用 AI 功能前，需要先准备相应模型。</p></div></details>
+<details><summary><span data-i18n="faqStartQ">第一次使用，从哪里开始？</span></summary><div class="faq-answer"><p data-i18n="faqStartA">先导入几份常用资料，在画布上连接相关文件，或按主题创建分组；之后可以直接打开阅读、搜索内容，或新建 Markdown 笔记。</p></div></details>
+<details><summary><span data-i18n="faqShareQ">手机和 Windows 电脑也能传文件吗？</span></summary><div class="faq-answer"><p data-i18n="faqShareA">可以通过同一局域网中的二维码或链接向 Vorlinx 导入文件。分享资料时，可设置密码与有效期，由对方通过浏览器访问。</p></div></details>
+<details><summary><span data-i18n="faqBackupQ">备份可以保存在哪里？</span></summary><div class="faq-answer"><p data-i18n="faqBackupA">备份先加密，再保存到你指定的目录。如果该目录由你使用的同步服务管理，加密备份也可以由该服务同步。</p><p class="roadmap-note" data-i18n="backupRoadmap">后续计划：未来版本将逐步支持将加密备份同步到多个云存储服务。</p></div></details>
+</section>
   </main>
-  <footer class="shell"><div class="brand"><img class="brand-image" src="assets/shared/vorlinx-brand-512.png" width="512" height="123" alt="Vorlinx"></div>
-<p data-i18n="tagline">文件一眼看全，整理随你所想。</p></footer>
+<footer class="site-footer"><div class="footer-grid shell">
+<div class="footer-brand"><a href="/zh-hans-cn/" data-page-link="" aria-label="Vorlinx"><img src="/assets/shared/vorlinx-brand-512.png" width="512" height="123" alt="Vorlinx"></a><p data-i18n="footerBlurb">把常用资料留在眼前，让文件与思路都有自己的位置。</p><span data-i18n="localLabel">本地 AI · 无需云端</span></div>
+<nav class="footer-column"><h2 data-i18n="footerProduct">产品</h2><button type="button" data-download data-i18n="download">下载</button><a href="/zh-hans-cn/about/" data-page-link="about" data-i18n="footerAbout">关于 Vorlinx</a></nav>
+<nav class="footer-column"><h2 data-i18n="footerHelp">帮助</h2><a href="/zh-hans-cn/faq/" data-page-link="faq" data-i18n="footerFaq">常见问题</a><a href="/zh-hans-cn/support/" data-page-link="support" data-i18n="footerSupport">支持与联系</a></nav>
+<nav class="footer-column"><h2 data-i18n="footerMore">了解更多</h2><a href="/zh-hans-cn/privacy/" data-page-link="privacy" data-i18n="footerPrivacy">隐私政策</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" data-i18n="footerLicense">用户许可</a></nav>
+</div><div class="footer-bottom shell"><span>© Vorlinx</span><span data-i18n="tagline">文件一眼看全，整理随你所想。</span></div></footer>
   <dialog id="download-dialog" aria-labelledby="download-title"><div class="dialog-heading">
 <h2 id="download-title">Vorlinx · macOS</h2>
 <button type="button" id="close-download" aria-label="关闭下载说明" data-i18n-aria="closeDownload">×</button>
