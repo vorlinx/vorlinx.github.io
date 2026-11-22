@@ -5,7 +5,7 @@ const messages = {
     "localLabel": "本地 AI · 无订阅 · 无云端费用",
     "heroTitle": [
       "文件一眼看全，",
-      "整理随你所愿。"
+      "整理与连接，随你所愿。"
     ],
     "heroCopy": [
       "将散落的资料放在一张画布上，",
@@ -55,7 +55,7 @@ const messages = {
     "sharingCaption": "汇集所需文件，为分享设置密码与有效期。",
     "privacyTitle": "私人的文件，自在的本地空间。",
     "privacyBody": "文件、语义索引与 AI 模型都留在设备上。整理、搜索与朗读，无需上传。",
-    "tagline": "文件一眼看全，整理随你所愿。",
+    "tagline": "文件一眼看全，整理与连接，随你所愿。",
     "closeDownload": "关闭下载说明",
     "downloadPending": "即将登陆 Mac App Store。",
     "downloadDescription": "正式上架后，这里将前往 App Store 下载 Vorlinx。",
@@ -175,7 +175,7 @@ const messages = {
     "localLabel": "本地 AI · 無訂閱 · 無雲端費用",
     "heroTitle": [
       "檔案一眼看全，",
-      "整理隨你所願。"
+      "整理與連結，隨你所願。"
     ],
     "heroCopy": [
       "將散落的資料放在一張畫布上，",
@@ -225,7 +225,7 @@ const messages = {
     "sharingCaption": "彙集所需檔案，為分享設定密碼與有效期限。",
     "privacyTitle": "私人的檔案，自在的本地空間。",
     "privacyBody": "檔案、語意索引與 AI 模型都留在裝置上。整理、搜尋與朗讀，無需上傳。",
-    "tagline": "檔案一眼看全，整理隨你所願。",
+    "tagline": "檔案一眼看全，整理與連結，隨你所願。",
     "closeDownload": "關閉下載說明",
     "downloadPending": "即將登陸 Mac App Store。",
     "downloadDescription": "正式上架後，這裡將前往 App Store 下載 Vorlinx。",
@@ -345,7 +345,7 @@ const messages = {
     "localLabel": "Local AI · No subscription · No cloud fees",
     "heroTitle": [
       "Your files at a glance.",
-      "Organized your way."
+      "Organize and link your way."
     ],
     "heroCopy": [
       "Bring scattered files together on one canvas.",
@@ -395,7 +395,7 @@ const messages = {
     "sharingCaption": "Gather the files you need and set a password and expiry.",
     "privacyTitle": "Personal files. Your own local space.",
     "privacyBody": "Files, semantic indexes and AI models stay on your device. Organize, search and listen without uploading.",
-    "tagline": "Your files at a glance. Organized your way.",
+    "tagline": "Your files at a glance. Organize and link your way.",
     "closeDownload": "Close download information",
     "downloadPending": "Coming to the Mac App Store.",
     "downloadDescription": "Once available, this button will open Vorlinx on the App Store.",
