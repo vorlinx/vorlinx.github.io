@@ -117,7 +117,7 @@ const messages = {
     "supportDownloadQ": "关于应用",
     "supportDownloadA": "Vorlinx 是一款 macOS 应用，发布渠道为 Mac App Store。",
     "supportContactQ": "联系我们",
-    "supportContactA": "联系与反馈邮箱：待补充。",
+    "supportContactA": "联系与反馈邮箱：vorlinx@outlook.com",
     "footerBlurb": "把常用资料留在眼前，让文件与思路都有自己的位置。",
     "footerProduct": "产品",
     "footerHelp": "帮助",
@@ -152,7 +152,7 @@ const messages = {
     "policyRetentionQ": "七、资料保留与删除",
     "policyRetentionA": "你的资料保留在自己的设备与自行选择的备份位置，保留时间由你控制。可以使用应用提供的管理功能或系统文件管理工具删除不再需要的资料、模型和备份。卸载应用不一定会删除原文件、外部目录或已有备份；使用同步服务时，也请按需要管理其副本与回收站。由于我们不持有这些私人资料，不存在需要向我们申请删除的服务器副本。",
     "policyContactQ": "八、主动联系与政策更新",
-    "policyContactA": "如果你主动通过电子邮件联系我们，你选择提供的邮箱、问题描述和附件仅用于处理你的请求；请勿发送不必要的私人文件。联系邮箱将在此页与支持页面补充。若未来版本改变资料处理方式，我们会相应更新本政策，并在需要时说明变化与征求授权。未来多云备份功能目前属于开发计划，正式推出时会补充相应说明。",
+    "policyContactA": "如果你主动通过电子邮件联系我们，你选择提供的邮箱、问题描述和附件仅用于处理你的请求；请勿发送不必要的私人文件。联系邮箱：vorlinx@outlook.com。若未来版本改变资料处理方式，我们会相应更新本政策，并在需要时说明变化与征求授权。未来多云备份功能目前属于开发计划，正式推出时会补充相应说明。",
     "privacyNote": [
       "模型需提前准备。",
       "局域网访问由你主动开启。"
@@ -287,7 +287,7 @@ const messages = {
     "supportDownloadQ": "關於應用程式",
     "supportDownloadA": "Vorlinx 是一款 macOS 應用程式，發佈管道為 Mac App Store。",
     "supportContactQ": "聯絡我們",
-    "supportContactA": "聯絡與回饋信箱：待補充。",
+    "supportContactA": "聯絡與回饋信箱：vorlinx@outlook.com",
     "footerBlurb": "把常用資料留在眼前，讓檔案與思路都有自己的位置。",
     "footerProduct": "產品",
     "footerHelp": "說明",
@@ -322,7 +322,7 @@ const messages = {
     "policyRetentionQ": "七、資料保留與刪除",
     "policyRetentionA": "你的資料保留在自己的裝置與自行選擇的備份位置，保留時間由你控制。可以使用應用程式提供的管理功能或系統檔案管理工具刪除不再需要的資料、模型和備份。解除安裝應用程式不一定會刪除原始檔案、外部目錄或既有備份；使用同步服務時，也請按需要管理其副本與垃圾桶。由於我們不持有這些私人資料，不存在需要向我們申請刪除的伺服器副本。",
     "policyContactQ": "八、主動聯絡與政策更新",
-    "policyContactA": "如果你主動透過電子郵件聯絡我們，你選擇提供的信箱、問題描述和附件僅用於處理你的請求；請勿傳送不必要的私人檔案。聯絡信箱將於本頁與支援頁面補充。若未來版本改變資料處理方式，我們會相應更新本政策，並在需要時說明變更與徵求授權。未來多雲備份功能目前屬於開發計畫，正式推出時會補充相應說明。",
+    "policyContactA": "如果你主動透過電子郵件聯絡我們，你選擇提供的信箱、問題描述和附件僅用於處理你的請求；請勿傳送不必要的私人檔案。聯絡信箱：vorlinx@outlook.com。若未來版本改變資料處理方式，我們會相應更新本政策，並在需要時說明變更與徵求授權。未來多雲備份功能目前屬於開發計畫，正式推出時會補充相應說明。",
     "privacyNote": [
       "模型需事先準備。",
       "區域網路存取由你主動開啟。"
@@ -457,7 +457,7 @@ const messages = {
     "supportDownloadQ": "About the app",
     "supportDownloadA": "Vorlinx is a macOS app distributed through the Mac App Store.",
     "supportContactQ": "Contact us",
-    "supportContactA": "Contact and feedback email: to be added.",
+    "supportContactA": "Contact and feedback email: vorlinx@outlook.com",
     "footerBlurb": "Keep everyday files in view and give your ideas room to grow.",
     "footerProduct": "Product",
     "footerHelp": "Help",
@@ -492,7 +492,7 @@ const messages = {
     "policyRetentionQ": "7. Retention and deletion",
     "policyRetentionA": "Your data remains on your devices and in backup locations you choose, for as long as you decide. Use app controls or system file management tools to remove data, models and backups you no longer need. Uninstalling the app may not remove original files, external folders or existing backups. Manage copies and trash in any sync service you use. We do not hold server copies of this private material that you need to ask us to delete.",
     "policyContactQ": "8. Contact and policy updates",
-    "policyContactA": "If you email us, the address, issue description and attachments you choose to provide are used to handle your request. Do not send unnecessary private files. A contact email will be added here and on the support page. If future releases change data handling, we will update this policy and explain changes or seek permission where needed. Direct multi-cloud backup is currently planned; relevant details will be added when it becomes available.",
+    "policyContactA": "If you email us, the address, issue description and attachments you choose to provide are used to handle your request. Do not send unnecessary private files. Contact email: vorlinx@outlook.com. If future releases change data handling, we will update this policy and explain changes or seek permission where needed. Direct multi-cloud backup is currently planned; relevant details will be added when it becomes available.",
     "privacyNote": [
       "Prepare local models before use.",
       "Local network access starts only when you enable it."
