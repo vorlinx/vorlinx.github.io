@@ -70,7 +70,7 @@ const messages = {
       "把重要的段落和自己的理解，一起留下。"
     ],
     "pdfCaption": "标记重要段落，把想法留在便签里。",
-    "mcpKicker": "连接 AI 助手",
+    "mcpKicker": "与 AI 助手协作",
     "mcpTitle": ["说出你想做的，", "让 AI 助手帮你操作。"],
     "mcpBody": ["通过 MCP，让支持它的 AI 助手与 Vorlinx 配合。", "一句话打开文档、跳转页面，或开始朗读。"],
     "mcpCaption": "在 Codex 中，让 Vorlinx 打开《老人与海》，翻到指定页并开始朗读。",
@@ -245,7 +245,7 @@ const messages = {
       "把重要的段落和自己的理解，一起留下。"
     ],
     "pdfCaption": "標記重要段落，把想法留在便箋裡。",
-    "mcpKicker": "連接 AI 助手",
+    "mcpKicker": "與 AI 助手協作",
     "mcpTitle": ["說出你想做的，", "讓 AI 助手幫你操作。"],
     "mcpBody": ["透過 MCP，讓支援它的 AI 助手與 Vorlinx 配合。", "一句話開啟文件、跳轉頁面，或開始朗讀。"],
     "mcpCaption": "在 Codex 中，讓 Vorlinx 開啟《老人與海》，翻到指定頁並開始朗讀。",
@@ -420,7 +420,7 @@ const messages = {
       "Keep important passages and your own thoughts together."
     ],
     "pdfCaption": "Mark important passages and keep your thoughts in notes.",
-    "mcpKicker": "Connect your AI assistant",
+    "mcpKicker": "Work with your AI assistant",
     "mcpTitle": ["Say what you want to do.", "Let your AI assistant help."],
     "mcpBody": ["Connect an MCP-compatible AI assistant to Vorlinx.", "Ask it to open a document, jump to a page, or start reading aloud."],
     "mcpCaption": "Ask Codex to open The Old Man and the Sea in Vorlinx, jump to a page, and read aloud.",
