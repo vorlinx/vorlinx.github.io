@@ -36,6 +36,12 @@
       "src": "/assets/optimized/zh-hans-cn/search-0026994ade7e.png",
       "srcset": "/assets/optimized/zh-hans-cn/search-0026994ade7e-720.webp 720w, /assets/optimized/zh-hans-cn/search-0026994ade7e-1080.webp 1080w, /assets/optimized/zh-hans-cn/search-0026994ade7e-1453.webp 1453w"
     },
+    "mcp": {
+      "width": 1439,
+      "height": 898,
+      "src": "/assets/optimized/zh-hans-cn/mcp-302c32ee02a5.png",
+      "srcset": "/assets/optimized/zh-hans-cn/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/zh-hans-cn/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/zh-hans-cn/mcp-302c32ee02a5-1439.webp 1439w"
+    },
     "import": {
       "width": 1440,
       "height": 900,
@@ -98,6 +104,12 @@
       "src": "/assets/optimized/zh-hant-tw/search-0026994ade7e.png",
       "srcset": "/assets/optimized/zh-hant-tw/search-0026994ade7e-720.webp 720w, /assets/optimized/zh-hant-tw/search-0026994ade7e-1080.webp 1080w, /assets/optimized/zh-hant-tw/search-0026994ade7e-1453.webp 1453w"
     },
+    "mcp": {
+      "width": 1439,
+      "height": 898,
+      "src": "/assets/optimized/zh-hant-tw/mcp-302c32ee02a5.png",
+      "srcset": "/assets/optimized/zh-hant-tw/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1439.webp 1439w"
+    },
     "import": {
       "width": 1440,
       "height": 900,
@@ -159,6 +171,12 @@
       "height": 900,
       "src": "/assets/optimized/en-us/search-0026994ade7e.png",
       "srcset": "/assets/optimized/en-us/search-0026994ade7e-720.webp 720w, /assets/optimized/en-us/search-0026994ade7e-1080.webp 1080w, /assets/optimized/en-us/search-0026994ade7e-1453.webp 1453w"
+    },
+    "mcp": {
+      "width": 1439,
+      "height": 898,
+      "src": "/assets/optimized/en-us/mcp-302c32ee02a5.png",
+      "srcset": "/assets/optimized/en-us/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/en-us/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/en-us/mcp-302c32ee02a5-1439.webp 1439w"
     },
     "import": {
       "width": 1440,

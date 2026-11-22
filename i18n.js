@@ -70,6 +70,11 @@ const messages = {
       "把重要的段落和自己的理解，一起留下。"
     ],
     "pdfCaption": "标记重要段落，把想法留在便签里。",
+    "mcpKicker": "连接 AI 助手",
+    "mcpTitle": ["说出你想做的，", "让 AI 助手帮你操作。"],
+    "mcpBody": ["通过 MCP，让支持它的 AI 助手与 Vorlinx 配合。", "一句话打开文档、跳转页面，或开始朗读。"],
+    "mcpCaption": "在 Codex 中，让 Vorlinx 打开《老人与海》，翻到指定页并开始朗读。",
+    "mcpNote": "Vorlinx 的内置 AI 在本地运行；连接外部 AI 助手后，交给助手的信息如何处理，取决于该助手的服务与设置。",
     "importKicker": "跨设备导入",
     "importTitle": [
       "手机里的资料，",
@@ -144,7 +149,7 @@ const messages = {
     "policyPermissionsQ": "三、系统权限由你控制",
     "policyPermissionsA": "文件访问、麦克风、语音识别和局域网等权限仅用于你选择使用的相应功能。你可以在 macOS 系统设置中管理或撤销权限；撤销后，依赖该权限的功能可能无法继续使用。请仅导入、处理或使用你有权使用的文件与参考声音。",
     "policyNetworkQ": "四、模型准备与主动网络操作",
-    "policyNetworkA": "首次准备模型或语言资源时，下载操作可能连接你选择的模型来源或系统资源服务。下载完成后的私人资料分析与 AI 推理在本地运行，不会向下载来源发送你的文件、录音或模型输入。你主动打开外部链接时，相应网站或服务按其自身政策处理访问请求。",
+    "policyNetworkA": "首次准备模型或语言资源时，下载操作可能连接你选择的模型来源或系统资源服务。下载完成后的私人资料分析与 AI 推理在本地运行，不会向下载来源发送你的文件、录音或模型输入。你主动打开外部链接时，相应网站或服务按其自身政策处理访问请求。 Vorlinx 的内置 AI 在本地运行；连接外部 AI 助手后，交给助手的信息如何处理，取决于该助手的服务与设置。",
     "policySharingQ": "五、局域网导入与分享",
     "policySharingA": "跨设备导入与分享由你主动开启，文件在设备与访问者之间通过局域网传输，不经过我们运营的中转服务器。你可以为分享设置密码与有效期，并停止分享。请仅向信任的人提供访问链接或二维码；接收方已经下载的副本，不会因你停止分享而自动删除。",
     "policyBackupQ": "六、先加密，再备份",
@@ -240,6 +245,11 @@ const messages = {
       "把重要的段落和自己的理解，一起留下。"
     ],
     "pdfCaption": "標記重要段落，把想法留在便箋裡。",
+    "mcpKicker": "連接 AI 助手",
+    "mcpTitle": ["說出你想做的，", "讓 AI 助手幫你操作。"],
+    "mcpBody": ["透過 MCP，讓支援它的 AI 助手與 Vorlinx 配合。", "一句話開啟文件、跳轉頁面，或開始朗讀。"],
+    "mcpCaption": "在 Codex 中，讓 Vorlinx 開啟《老人與海》，翻到指定頁並開始朗讀。",
+    "mcpNote": "Vorlinx 的內建 AI 在本地執行；連接外部 AI 助手後，交給助手的資訊如何處理，取決於該助手的服務與設定。",
     "importKicker": "跨裝置匯入",
     "importTitle": [
       "手機裡的資料，",
@@ -314,7 +324,7 @@ const messages = {
     "policyPermissionsQ": "三、系統權限由你控制",
     "policyPermissionsA": "檔案存取、麥克風、語音辨識和區域網路等權限僅用於你選擇使用的相應功能。你可以在 macOS 系統設定中管理或撤銷權限；撤銷後，依賴該權限的功能可能無法繼續使用。請僅匯入、處理或使用你有權使用的檔案與參考聲音。",
     "policyNetworkQ": "四、模型準備與主動網路操作",
-    "policyNetworkA": "首次準備模型或語言資源時，下載操作可能連接你選擇的模型來源或系統資源服務。下載完成後的私人資料分析與 AI 推論在本地執行，不會向下載來源傳送你的檔案、錄音或模型輸入。你主動開啟外部連結時，相應網站或服務依其自身政策處理存取請求。",
+    "policyNetworkA": "首次準備模型或語言資源時，下載操作可能連接你選擇的模型來源或系統資源服務。下載完成後的私人資料分析與 AI 推論在本地執行，不會向下載來源傳送你的檔案、錄音或模型輸入。你主動開啟外部連結時，相應網站或服務依其自身政策處理存取請求。 Vorlinx 的內建 AI 在本地執行；連接外部 AI 助手後，交給助手的資訊如何處理，取決於該助手的服務與設定。",
     "policySharingQ": "五、區域網路匯入與分享",
     "policySharingA": "跨裝置匯入與分享由你主動開啟，檔案在裝置與存取者之間透過區域網路傳輸，不經過我們營運的中繼伺服器。你可以為分享設定密碼與有效期限，並停止分享。請僅向信任的人提供存取連結或 QR Code；接收方已下載的副本，不會因你停止分享而自動刪除。",
     "policyBackupQ": "六、先加密，再備份",
@@ -410,6 +420,11 @@ const messages = {
       "Keep important passages and your own thoughts together."
     ],
     "pdfCaption": "Mark important passages and keep your thoughts in notes.",
+    "mcpKicker": "Connect your AI assistant",
+    "mcpTitle": ["Say what you want to do.", "Let your AI assistant help."],
+    "mcpBody": ["Connect an MCP-compatible AI assistant to Vorlinx.", "Ask it to open a document, jump to a page, or start reading aloud."],
+    "mcpCaption": "Ask Codex to open The Old Man and the Sea in Vorlinx, jump to a page, and read aloud.",
+    "mcpNote": "Vorlinx’s built-in AI runs locally. When you connect an external AI assistant, information shared with it is handled according to that assistant’s service and settings.",
     "importKicker": "Import across devices",
     "importTitle": [
       "From your phone.",
@@ -484,7 +499,7 @@ const messages = {
     "policyPermissionsQ": "3. Permissions remain under your control",
     "policyPermissionsA": "File access, microphone, speech recognition and local network permissions are used for the corresponding features you choose to use. You can manage or revoke permissions in macOS System Settings; features that depend on a revoked permission may no longer work. Only use files and reference voices you are entitled to use.",
     "policyNetworkQ": "4. Model preparation and network actions",
-    "policyNetworkA": "Preparing models or language resources for the first time may connect to your selected model source or system resource service. Subsequent analysis of private material and AI inference run locally; your files, recordings and model inputs are not sent to those download sources. External websites you choose to open handle requests under their own policies.",
+    "policyNetworkA": "Preparing models or language resources for the first time may connect to your selected model source or system resource service. Subsequent analysis of private material and AI inference run locally; your files, recordings and model inputs are not sent to those download sources. External websites you choose to open handle requests under their own policies. Vorlinx’s built-in AI runs locally. When you connect an external AI assistant, information shared with it is handled according to that assistant’s service and settings.",
     "policySharingQ": "5. Local network import and sharing",
     "policySharingA": "You enable cross-device import and sharing. Files transfer between devices and recipients over the local network, without relay servers operated by us. You can set a sharing password and expiry and stop sharing. Give links or QR codes only to people you trust; stopping a share does not delete copies that recipients have already downloaded.",
     "policyBackupQ": "6. Encrypt before backing up",
@@ -529,7 +544,7 @@ function normalizeLanguage(value) {
 }
 const screenshotLabels = {
   link:'heroImageLabel', groups:'groupsCaption', pdf:'pdfCaption',
-  files:'filesCaption', reading:'readingCaption', search:'searchCaption', import:'importCaption',
+  files:'filesCaption', reading:'readingCaption', search:'searchCaption', mcp:'mcpCaption', import:'importCaption',
   sharing:'sharingCaption', recipient:'recipientCaption', backup:'backupCaption'
 };
 const languageControl = document.querySelector('.language-control');

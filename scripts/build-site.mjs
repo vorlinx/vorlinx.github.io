@@ -29,7 +29,7 @@ const javascript=['app.js','i18n.js'].map(name=>fs.readFileSync(path.join(root,n
 const escape=v=>String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const url=p=>new URL(p,origin).href;
 const languagePath=(l,page="")=>`/${l.toLowerCase()}/${page ? page+"/" : ""}`;
-const labels={link:'heroImageLabel',groups:'groupsCaption',pdf:'pdfCaption',files:'filesCaption',reading:'readingCaption',search:'searchCaption',import:'importCaption',sharing:'sharingCaption',recipient:'recipientCaption',backup:'backupCaption'};
+const labels={link:'heroImageLabel',groups:'groupsCaption',pdf:'pdfCaption',files:'filesCaption',reading:'readingCaption',search:'searchCaption',mcp:'mcpCaption',import:'importCaption',sharing:'sharingCaption',recipient:'recipientCaption',backup:'backupCaption'};
 const names={'zh-Hans-CN':'简体中文','zh-Hant-TW':'繁體中文','en-US':'English'};
 function imageDimensions(name){
  return Object.fromEntries(config.languages.map(language=>{
