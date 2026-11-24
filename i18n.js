@@ -3,14 +3,8 @@ const messages = {
     "download": "下载",
     "languageLabel": "选择语言",
     "localLabel": "本地 AI · 无订阅 · 无云端费用",
-    "heroTitle": [
-      "文件一眼看全，",
-      "整理与连接，随你所愿。"
-    ],
-    "heroCopy": [
-      "将散落的资料放在一张画布上，",
-      "自由连接、分组，随时阅读与编辑。"
-    ],
+    "heroTitle": ["文件一眼看全，", "连接随你所愿。"],
+    "heroCopy": ["在一张画布上组织资料，", "让多个 AI 接力协同，把工作一起完成。"],
     "heroImageLabel": "个人资料画布：工作资料、常用文件和最近在读的书",
     "groupsKicker": "分组",
     "groupsTitle": [
@@ -55,7 +49,7 @@ const messages = {
     "sharingCaption": "汇集所需文件，为分享设置密码与有效期。",
     "privacyTitle": "私人的文件，自在的本地空间。",
     "privacyBody": "文件、语义索引与 AI 模型都留在设备上。整理、搜索与朗读，无需上传。",
-    "tagline": "文件一眼看全，整理与连接，随你所愿。",
+    "tagline": "文件一眼看全，连接随你所愿。",
     "closeDownload": "关闭下载说明",
     "downloadPending": "即将登陆 Mac App Store。",
     "downloadDescription": "正式上架后，这里将前往 App Store 下载 Vorlinx。",
@@ -70,9 +64,17 @@ const messages = {
       "把重要的段落和自己的理解，一起留下。"
     ],
     "pdfCaption": "标记重要段落，把想法留在便签里。",
-    "mcpKicker": "与 AI 助手协作",
-    "mcpTitle": ["说出你想做的，", "让 AI 助手帮你操作。"],
-    "mcpBody": ["通过 MCP，让支持它的 AI 助手与 Vorlinx 配合。", "一句话打开文档、跳转页面，或开始朗读。"],
+    "relayKicker": "AI 接力",
+    "relayTitle": ["不同 AI，各展所长。", "一份工作，多个 AI 接力协同完成。"],
+    "relayBody": "围绕同一个工作目标分派任务，让不同 AI 共享当前工作上下文，协同推进工作。",
+    "relayStep1": "创建 AI 接力",
+    "relayStep2": "分派任务",
+    "relayStep3": "AI 之间协同",
+    "relayStep4": "完成工作",
+    "relayCaption": "在一份 AI 接力中，共同对齐目标、遵照要求、推进工作，协同完成任务。",
+    "mcpKicker": "AI 文档助手",
+    "mcpTitle": ["想读哪一份，", "告诉 AI 助手。"],
+    "mcpBody": ["通过 MCP，让支持它的 AI 助手操作 Vorlinx。", "打开文档、跳转页面，或开始朗读，用一句话完成。"],
     "mcpCaption": "在 Codex 中，让 Vorlinx 打开《老人与海》，翻到指定页并开始朗读。",
     "mcpNote": "Vorlinx 的内置 AI 在本地运行；连接外部 AI 助手后，交给助手的信息如何处理，取决于该助手的服务与设置。",
     "importKicker": "跨设备导入",
@@ -101,7 +103,7 @@ const messages = {
     "searchTitle": "想不起名字，描述就好。",
     "searchBody": "用自然语言描述你记得的内容，从本地资料库中找回文字、文档和图片。",
     "searchCaption": "记得内容，就有找回资料的线索。",
-    "productDefinition": "Vorlinx 是一款 macOS 纯本地个人文件管理应用。连接、分组不同文件夹中的资料，支持自然语言搜索、文档阅读与自定义音色朗读，以及极简 Markdown 编辑。 文件与 AI 模型都在你的设备上，无需上传，离线使用。",
+    "productDefinition": "Vorlinx 让文件整理与 AI 协作汇于一处。整理、连接与分组文件资料，连接多个 AI 工具，协同完成任务。自然语言搜索、文档阅读、摹音朗读、极简 Markdown 编辑。文件本地管理，内置 AI 本机运行，无订阅，无云端费用。",
     "seoTitle": "Vorlinx｜内置本地 AI 的 macOS 文件管理应用",
     "footerFaq": "常见问题",
     "footerCompany": "德宽科技",
@@ -178,14 +180,8 @@ const messages = {
     "download": "下載",
     "languageLabel": "選擇語言",
     "localLabel": "本地 AI · 無訂閱 · 無雲端費用",
-    "heroTitle": [
-      "檔案一眼看全，",
-      "整理與連結，隨你所願。"
-    ],
-    "heroCopy": [
-      "將散落的資料放在一張畫布上，",
-      "自由連結、分組，隨時閱讀與編輯。"
-    ],
+    "heroTitle": ["檔案一眼看全，", "連結隨你所願。"],
+    "heroCopy": ["在一張畫布上組織資料，", "讓多個 AI 接力協同，把工作一起完成。"],
     "heroImageLabel": "個人資料畫布：工作資料、常用檔案和最近在讀的書",
     "groupsKicker": "分組",
     "groupsTitle": [
@@ -230,7 +226,7 @@ const messages = {
     "sharingCaption": "彙集所需檔案，為分享設定密碼與有效期限。",
     "privacyTitle": "私人的檔案，自在的本地空間。",
     "privacyBody": "檔案、語意索引與 AI 模型都留在裝置上。整理、搜尋與朗讀，無需上傳。",
-    "tagline": "檔案一眼看全，整理與連結，隨你所願。",
+    "tagline": "檔案一眼看全，連結隨你所願。",
     "closeDownload": "關閉下載說明",
     "downloadPending": "即將登陸 Mac App Store。",
     "downloadDescription": "正式上架後，這裡將前往 App Store 下載 Vorlinx。",
@@ -245,9 +241,17 @@ const messages = {
       "把重要的段落和自己的理解，一起留下。"
     ],
     "pdfCaption": "標記重要段落，把想法留在便箋裡。",
-    "mcpKicker": "與 AI 助手協作",
-    "mcpTitle": ["說出你想做的，", "讓 AI 助手幫你操作。"],
-    "mcpBody": ["透過 MCP，讓支援它的 AI 助手與 Vorlinx 配合。", "一句話開啟文件、跳轉頁面，或開始朗讀。"],
+    "relayKicker": "AI 接力",
+    "relayTitle": ["不同 AI，各展所長。", "一份工作，多個 AI 接力協同完成。"],
+    "relayBody": "圍繞同一個工作目標分派任務，讓不同 AI 共享目前的工作上下文，協同推進工作。",
+    "relayStep1": "建立 AI 接力",
+    "relayStep2": "分派任務",
+    "relayStep3": "AI 之間協同",
+    "relayStep4": "完成工作",
+    "relayCaption": "在一份 AI 接力中，共同對齊目標、遵照要求、推進工作，協同完成任務。",
+    "mcpKicker": "AI 文件助手",
+    "mcpTitle": ["想讀哪一份，", "告訴 AI 助手。"],
+    "mcpBody": ["透過 MCP，讓支援它的 AI 助手操作 Vorlinx。", "開啟文件、跳轉頁面，或開始朗讀，用一句話完成。"],
     "mcpCaption": "在 Codex 中，讓 Vorlinx 開啟《老人與海》，翻到指定頁並開始朗讀。",
     "mcpNote": "Vorlinx 的內建 AI 在本地執行；連接外部 AI 助手後，交給助手的資訊如何處理，取決於該助手的服務與設定。",
     "importKicker": "跨裝置匯入",
@@ -276,7 +280,7 @@ const messages = {
     "searchTitle": "想不起名字，描述就好。",
     "searchBody": "用自然語言描述你記得的內容，從本地資料庫中找回文字、文件和圖片。",
     "searchCaption": "記得內容，就有找回資料的線索。",
-    "productDefinition": "Vorlinx 是一款 macOS 純本地個人檔案管理應用程式。連結、分組不同資料夾中的資料，支援自然語言搜尋、文件閱讀與自訂音色朗讀，以及極簡 Markdown 編輯。 檔案與 AI 模型都在你的裝置上，無需上傳，離線使用。",
+    "productDefinition": "Vorlinx 讓檔案整理與 AI 協作匯於一處。整理、連結與分組檔案資料，連接多個 AI 工具，協同完成任務。自然語言搜尋、文件閱讀、摹音朗讀、極簡 Markdown 編輯。檔案本地管理，內建 AI 本機執行，無訂閱，無雲端費用。",
     "seoTitle": "Vorlinx｜內建本地 AI 的 macOS 檔案管理應用程式",
     "footerFaq": "常見問題",
     "footerCompany": "德寬科技",
@@ -353,14 +357,8 @@ const messages = {
     "download": "Download",
     "languageLabel": "Choose language",
     "localLabel": "Local AI · No subscription · No cloud fees",
-    "heroTitle": [
-      "Your files at a glance.",
-      "Organize and link your way."
-    ],
-    "heroCopy": [
-      "Bring scattered files together on one canvas.",
-      "Link, group, read and edit. Your way."
-    ],
+    "heroTitle": ["All your files at a glance.", "Link your way."],
+    "heroCopy": ["Organize your files on one canvas.", "Let multiple AI assistants collaborate and hand off work to get the job done."],
     "heroImageLabel": "Personal file canvas with work, everyday files and current reading",
     "groupsKicker": "Groups",
     "groupsTitle": [
@@ -405,7 +403,7 @@ const messages = {
     "sharingCaption": "Gather the files you need and set a password and expiry.",
     "privacyTitle": "Personal files. Your own local space.",
     "privacyBody": "Files, semantic indexes and AI models stay on your device. Organize, search and listen without uploading.",
-    "tagline": "Your files at a glance. Organize and link your way.",
+    "tagline": "All your files at a glance. Link your way.",
     "closeDownload": "Close download information",
     "downloadPending": "Coming to the Mac App Store.",
     "downloadDescription": "Once available, this button will open Vorlinx on the App Store.",
@@ -420,9 +418,17 @@ const messages = {
       "Keep important passages and your own thoughts together."
     ],
     "pdfCaption": "Mark important passages and keep your thoughts in notes.",
-    "mcpKicker": "Work with your AI assistant",
-    "mcpTitle": ["Say what you want to do.", "Let your AI assistant help."],
-    "mcpBody": ["Connect an MCP-compatible AI assistant to Vorlinx.", "Ask it to open a document, jump to a page, or start reading aloud."],
+    "relayKicker": "AI Relay",
+    "relayTitle": ["Different AI strengths.", "Working together to get the job done."],
+    "relayBody": "Assign tasks toward a shared work goal. Let different AI assistants share the current work context and move the work forward together.",
+    "relayStep1": "Create an AI Relay",
+    "relayStep2": "Assign tasks",
+    "relayStep3": "Collaborate across AI",
+    "relayStep4": "Complete the work",
+    "relayCaption": "Align on goals and requirements, move work forward, and complete tasks together in one AI Relay.",
+    "mcpKicker": "AI document assistant",
+    "mcpTitle": ["Tell your AI assistant", "what you want to read."],
+    "mcpBody": ["Use MCP to let a compatible AI assistant work with Vorlinx.", "Ask it to open a document, jump to a page, or start reading aloud."],
     "mcpCaption": "Ask Codex to open The Old Man and the Sea in Vorlinx, jump to a page, and read aloud.",
     "mcpNote": "Vorlinx’s built-in AI runs locally. When you connect an external AI assistant, information shared with it is handled according to that assistant’s service and settings.",
     "importKicker": "Import across devices",
@@ -451,7 +457,7 @@ const messages = {
     "searchTitle": "Describe it. Find it.",
     "searchBody": "Describe what you remember in natural language to find text, documents and images in your local library.",
     "searchCaption": "What you remember is a clue to finding your files.",
-    "productDefinition": "Vorlinx is a local-first personal file manager for macOS. Link and group files across folders, search in natural language, read documents, listen in a custom voice, and write in a minimal Markdown editor. Your files and AI models stay on your device. No uploads. Works offline.",
+    "productDefinition": "Vorlinx brings file organization and AI collaboration together. Organize, link and group your files. Bring multiple AI tools together to complete tasks. Search in natural language, read documents, listen with voice cloning, and write in a minimal Markdown editor. Files stay local. Built-in AI runs on your Mac. No subscription. No cloud fees.",
     "seoTitle": "Vorlinx | A macOS File Manager with Built-in Local AI",
     "footerFaq": "Common questions",
     "footerCompany": "Dekuan Technology",
@@ -544,7 +550,7 @@ function normalizeLanguage(value) {
 }
 const screenshotLabels = {
   link:'heroImageLabel', groups:'groupsCaption', pdf:'pdfCaption',
-  files:'filesCaption', reading:'readingCaption', search:'searchCaption', mcp:'mcpCaption', import:'importCaption',
+  files:'filesCaption', reading:'readingCaption', search:'searchCaption', mcp:'mcpCaption', 'ai-relay':'relayCaption', import:'importCaption',
   sharing:'sharingCaption', recipient:'recipientCaption', backup:'backupCaption'
 };
 const languageControl = document.querySelector('.language-control');
@@ -603,6 +609,17 @@ function renderLocalizedText(element, value) {
   element.replaceChildren();
   (Array.isArray(value) ? value : [value]).forEach((line, index) => {
     if (index) element.append(document.createElement('br'));
+    if (element.hasAttribute('data-highlight-title') && index === 1) {
+      const match = line.match(/连接|連結|Link/);
+      if (match) {
+        element.append(document.createTextNode(line.slice(0, match.index)));
+        const highlight = document.createElement('span');
+        highlight.className = 'hero-link-highlight';
+        highlight.textContent = match[0];
+        element.append(highlight, document.createTextNode(line.slice(match.index + match[0].length)));
+        return;
+      }
+    }
     element.append(document.createTextNode(line));
   });
 }

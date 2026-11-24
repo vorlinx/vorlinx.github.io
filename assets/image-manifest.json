@@ -3,8 +3,8 @@
     "link": {
       "width": 1440,
       "height": 900,
-      "src": "/assets/optimized/zh-hans-cn/link-0be24ca463c8.png",
-      "srcset": "/assets/optimized/zh-hans-cn/link-0be24ca463c8-720.webp 720w, /assets/optimized/zh-hans-cn/link-0be24ca463c8-1080.webp 1080w, /assets/optimized/zh-hans-cn/link-0be24ca463c8-1440.webp 1440w"
+      "src": "/assets/optimized/zh-hans-cn/link-9c83b3db56cb.png",
+      "srcset": "/assets/optimized/zh-hans-cn/link-9c83b3db56cb-720.webp 720w, /assets/optimized/zh-hans-cn/link-9c83b3db56cb-1080.webp 1080w, /assets/optimized/zh-hans-cn/link-9c83b3db56cb-1440.webp 1440w"
     },
     "groups": {
       "width": 1440,
@@ -35,6 +35,12 @@
       "height": 900,
       "src": "/assets/optimized/zh-hans-cn/search-0026994ade7e.png",
       "srcset": "/assets/optimized/zh-hans-cn/search-0026994ade7e-720.webp 720w, /assets/optimized/zh-hans-cn/search-0026994ade7e-1080.webp 1080w, /assets/optimized/zh-hans-cn/search-0026994ade7e-1453.webp 1453w"
+    },
+    "ai-relay": {
+      "width": 1440,
+      "height": 900,
+      "src": "/assets/optimized/zh-hans-cn/ai-relay-de298e15b76d.png",
+      "srcset": "/assets/optimized/zh-hans-cn/ai-relay-de298e15b76d-720.webp 720w, /assets/optimized/zh-hans-cn/ai-relay-de298e15b76d-1080.webp 1080w, /assets/optimized/zh-hans-cn/ai-relay-de298e15b76d-1440.webp 1440w"
     },
     "mcp": {
       "width": 1439,
@@ -71,8 +77,8 @@
     "link": {
       "width": 1440,
       "height": 900,
-      "src": "/assets/optimized/zh-hant-tw/link-0be24ca463c8.png",
-      "srcset": "/assets/optimized/zh-hant-tw/link-0be24ca463c8-720.webp 720w, /assets/optimized/zh-hant-tw/link-0be24ca463c8-1080.webp 1080w, /assets/optimized/zh-hant-tw/link-0be24ca463c8-1440.webp 1440w"
+      "src": "/assets/optimized/zh-hant-tw/link-9c83b3db56cb.png",
+      "srcset": "/assets/optimized/zh-hant-tw/link-9c83b3db56cb-720.webp 720w, /assets/optimized/zh-hant-tw/link-9c83b3db56cb-1080.webp 1080w, /assets/optimized/zh-hant-tw/link-9c83b3db56cb-1440.webp 1440w"
     },
     "groups": {
       "width": 1440,
@@ -103,6 +109,12 @@
       "height": 900,
       "src": "/assets/optimized/zh-hant-tw/search-0026994ade7e.png",
       "srcset": "/assets/optimized/zh-hant-tw/search-0026994ade7e-720.webp 720w, /assets/optimized/zh-hant-tw/search-0026994ade7e-1080.webp 1080w, /assets/optimized/zh-hant-tw/search-0026994ade7e-1453.webp 1453w"
+    },
+    "ai-relay": {
+      "width": 1440,
+      "height": 900,
+      "src": "/assets/optimized/zh-hant-tw/ai-relay-de298e15b76d.png",
+      "srcset": "/assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-720.webp 720w, /assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-1080.webp 1080w, /assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-1440.webp 1440w"
     },
     "mcp": {
       "width": 1439,
@@ -139,8 +151,8 @@
     "link": {
       "width": 1440,
       "height": 900,
-      "src": "/assets/optimized/en-us/link-0be24ca463c8.png",
-      "srcset": "/assets/optimized/en-us/link-0be24ca463c8-720.webp 720w, /assets/optimized/en-us/link-0be24ca463c8-1080.webp 1080w, /assets/optimized/en-us/link-0be24ca463c8-1440.webp 1440w"
+      "src": "/assets/optimized/en-us/link-714062742e47.png",
+      "srcset": "/assets/optimized/en-us/link-714062742e47-720.webp 720w, /assets/optimized/en-us/link-714062742e47-1080.webp 1080w, /assets/optimized/en-us/link-714062742e47-1440.webp 1440w"
     },
     "groups": {
       "width": 1440,
@@ -171,6 +183,12 @@
       "height": 900,
       "src": "/assets/optimized/en-us/search-0026994ade7e.png",
       "srcset": "/assets/optimized/en-us/search-0026994ade7e-720.webp 720w, /assets/optimized/en-us/search-0026994ade7e-1080.webp 1080w, /assets/optimized/en-us/search-0026994ade7e-1453.webp 1453w"
+    },
+    "ai-relay": {
+      "width": 1440,
+      "height": 900,
+      "src": "/assets/optimized/en-us/ai-relay-1c950ecb532e.png",
+      "srcset": "/assets/optimized/en-us/ai-relay-1c950ecb532e-720.webp 720w, /assets/optimized/en-us/ai-relay-1c950ecb532e-1080.webp 1080w, /assets/optimized/en-us/ai-relay-1c950ecb532e-1440.webp 1440w"
     },
     "mcp": {
       "width": 1439,

@@ -29,7 +29,7 @@ const javascript=['app.js','i18n.js'].map(name=>fs.readFileSync(path.join(root,n
 const escape=v=>String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const url=p=>new URL(p,origin).href;
 const languagePath=(l,page="")=>`/${l.toLowerCase()}/${page ? page+"/" : ""}`;
-const labels={link:'heroImageLabel',groups:'groupsCaption',pdf:'pdfCaption',files:'filesCaption',reading:'readingCaption',search:'searchCaption',mcp:'mcpCaption',import:'importCaption',sharing:'sharingCaption',recipient:'recipientCaption',backup:'backupCaption'};
+const labels={link:'heroImageLabel',groups:'groupsCaption',pdf:'pdfCaption',files:'filesCaption',reading:'readingCaption',search:'searchCaption',mcp:'mcpCaption','ai-relay':'relayCaption',import:'importCaption',sharing:'sharingCaption',recipient:'recipientCaption',backup:'backupCaption'};
 const names={'zh-Hans-CN':'简体中文','zh-Hant-TW':'繁體中文','en-US':'English'};
 function imageDimensions(name){
  return Object.fromEntries(config.languages.map(language=>{
@@ -45,7 +45,7 @@ function renderImage(tag,name,language,copy){
   if(item.width!==actual[0] || item.height!==actual[1])throw Error('Run prepare-images.mjs after replacing screenshots.');
  }
  const item=resources[language],sizes=name==='link'?'(max-width: 700px) calc(100vw - 56px), (max-width: 1000px) calc(100vw - 96px), (max-width: 1500px) calc(100vw - 160px), 1320px'
-  :name==='search'?'(max-width: 700px) calc(100vw - 72px), 760px':'(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px';
+  :(name==='search'||name==='ai-relay')?'(max-width: 700px) calc(100vw - 72px), 760px':'(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px';
  const img=tag.replace(/src="[^"]+"/,`src="${item.src}"`)
   .replace(/alt="[^"]*"/,`alt="${escape(copy[labels[name]])}"`)
   .replace(/width="[^"]*"/,`width="${item.width}"`).replace(/height="[^"]*"/,`height="${item.height}"`)
@@ -74,7 +74,7 @@ function render(language,page=''){
   .replace(/<html lang="[^"]+"/,`<html lang="${language}"`)
   .replace(/(<([a-z][a-z0-9]*)\b[^>]*\bdata-i18n="([^"]+)"[^>]*>)[\s\S]*?(<\/\2>)/gi,(_,open,tag,key,close)=>{
     if(copy[key]===undefined)throw Error(`Missing ${language}/${key}`);
-    return open+(Array.isArray(copy[key])?copy[key]:[copy[key]]).map(escape).join('<br>')+close;
+    return open+(Array.isArray(copy[key])?copy[key]:[copy[key]]).map((line,index)=>key==='heroTitle' && index===1 ? escape(line).replace(/连接|連結|Link/,word=>'<span class="hero-link-highlight">'+word+'</span>') : escape(line)).join('<br>')+close;
   })
   .replace(/<[^>]+data-i18n-aria="([^"]+)"[^>]*>/g,(tag,key)=>tag.replace(/aria-label="[^"]*"/,`aria-label="${escape(copy[key])}"`))
   .replace(/(<span id="language-current">)[\s\S]*?(<\/span>)/,`$1${names[language]}$2`)

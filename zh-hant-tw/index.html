@@ -60,6 +60,11 @@ img[data-screenshot]{cursor:zoom-in}img[data-screenshot]:focus-visible{outline:2
 /* Keep the longer local-AI pricing note clear at narrow header widths. */
 @media(min-width:701px) and (max-width:900px){.local-label{max-width:220px;white-space:normal;text-align:right;line-height:1.6}}
 @media(max-width:700px){.local-label{white-space:normal;text-align:right;line-height:1.6}}
+
+/* The title highlight is emphasis, not an interactive control. */
+.hero-link-highlight{display:inline-block;padding:.12em .3em .16em;margin-inline:.06em;border-radius:32px;background:var(--accent);color:#fff;line-height:1.12;letter-spacing:inherit}
+.relay-story{padding:56px 0 48px}.relay-story>.story-copy{text-align:center;max-width:850px;margin:0 auto 30px}.relay-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;list-style:none;padding:0;margin:0 0 38px}.relay-steps li{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;min-height:64px;padding:14px;background:#f5f5f5;border-radius:12px;font-size:16px;line-height:1.6}.relay-steps li:not(:last-child)::after{content:"→";position:absolute;right:-20px;color:#929ba3}.relay-story>.visual{max-width:900px;margin:auto}.relay-note{max-width:820px;margin:20px auto 0;text-align:center;font-size:13px;line-height:1.9;color:#7b8794}
+@media(max-width:700px){.relay-story{padding:32px 0}.relay-steps{gap:12px;margin-bottom:26px;grid-template-columns:1fr 1fr}.relay-steps li{font-size:14px;min-height:60px}.relay-steps li::after{display:none}.relay-story>.story-copy{margin-bottom:24px}.relay-note{font-size:13px;text-align:left}}
 </style>
 <!-- INLINE-CSS:END -->
 <!-- SEO:START -->
@@ -76,13 +81,13 @@ img[data-screenshot]{cursor:zoom-in}img[data-screenshot]:focus-visible{outline:2
   <meta property="og:title" content="Vorlinx｜內建本地 AI 的 macOS 檔案管理應用程式">
   <meta property="og:description" content="Vorlinx 是內建本地 AI 的 macOS 個人檔案管理應用程式。跨目錄連結與分組資料，自然語言搜尋，閱讀 PDF、自訂音色朗讀與 Markdown 編輯。檔案與 AI 處理留在裝置上。">
   <meta property="og:url" content="https://vorlinx.dekuan.org/zh-hant-tw/">
-  <meta property="og:image" content="https://vorlinx.dekuan.org/assets/optimized/zh-hant-tw/link-0be24ca463c8.png">
+  <meta property="og:image" content="https://vorlinx.dekuan.org/assets/optimized/zh-hant-tw/link-9c83b3db56cb.png">
   <meta property="og:locale" content="zh_TW">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Vorlinx｜內建本地 AI 的 macOS 檔案管理應用程式">
   <meta name="twitter:description" content="Vorlinx 是內建本地 AI 的 macOS 個人檔案管理應用程式。跨目錄連結與分組資料，自然語言搜尋，閱讀 PDF、自訂音色朗讀與 Markdown 編輯。檔案與 AI 處理留在裝置上。">
-  <meta name="twitter:image" content="https://vorlinx.dekuan.org/assets/optimized/zh-hant-tw/link-0be24ca463c8.png">
-  <script type="application/ld+json" id="site-schema">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://vorlinx.dekuan.org/#website","name":"Vorlinx","url":"https://vorlinx.dekuan.org/zh-hant-tw/","inLanguage":"zh-Hant-TW"},{"@type":"SoftwareApplication","@id":"https://vorlinx.dekuan.org/#software","name":"Vorlinx","url":"https://vorlinx.dekuan.org/zh-hant-tw/","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","description":"Vorlinx 是內建本地 AI 的 macOS 個人檔案管理應用程式。跨目錄連結與分組資料，自然語言搜尋，閱讀 PDF、自訂音色朗讀與 Markdown 編輯。檔案與 AI 處理留在裝置上。","inLanguage":"zh-Hant-TW","screenshot":"https://vorlinx.dekuan.org/assets/optimized/zh-hant-tw/link-0be24ca463c8.png"}]}</script>
+  <meta name="twitter:image" content="https://vorlinx.dekuan.org/assets/optimized/zh-hant-tw/link-9c83b3db56cb.png">
+  <script type="application/ld+json" id="site-schema">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://vorlinx.dekuan.org/#website","name":"Vorlinx","url":"https://vorlinx.dekuan.org/zh-hant-tw/","inLanguage":"zh-Hant-TW"},{"@type":"SoftwareApplication","@id":"https://vorlinx.dekuan.org/#software","name":"Vorlinx","url":"https://vorlinx.dekuan.org/zh-hant-tw/","operatingSystem":"macOS","applicationCategory":"UtilitiesApplication","description":"Vorlinx 是內建本地 AI 的 macOS 個人檔案管理應用程式。跨目錄連結與分組資料，自然語言搜尋，閱讀 PDF、自訂音色朗讀與 Markdown 編輯。檔案與 AI 處理留在裝置上。","inLanguage":"zh-Hant-TW","screenshot":"https://vorlinx.dekuan.org/assets/optimized/zh-hant-tw/link-9c83b3db56cb.png"}]}</script>
   <!-- SEO:END -->
 </head>
 <body>
@@ -100,12 +105,12 @@ img[data-screenshot]{cursor:zoom-in}img[data-screenshot]:focus-visible{outline:2
   <noscript><nav class="no-script-languages" aria-label="Languages"><a href="/zh-hans-cn/" lang="zh-Hans-CN">简体中文</a><a href="/zh-hant-tw/" lang="zh-Hant-TW">繁體中文</a><a href="/en-us/" lang="en-US">English</a></nav></noscript>
   <main>
     <section class="intro shell">
-      <h1 data-i18n="heroTitle">檔案一眼看全，<br>整理與連結，隨你所願。</h1>
-      <p class="intro-copy" data-i18n="heroCopy">將散落的資料放在一張畫布上，<br>自由連結、分組，隨時閱讀與編輯。</p>
-      <p class="product-definition" data-i18n="productDefinition">Vorlinx 是一款 macOS 純本地個人檔案管理應用程式。連結、分組不同資料夾中的資料，支援自然語言搜尋、文件閱讀與自訂音色朗讀，以及極簡 Markdown 編輯。 檔案與 AI 模型都在你的裝置上，無需上傳，離線使用。</p>
+      <h1 data-i18n="heroTitle" data-highlight-title>檔案一眼看全，<br><span class="hero-link-highlight">連結</span>隨你所願。</h1>
+      <p class="intro-copy" data-i18n="heroCopy">在一張畫布上組織資料，<br>讓多個 AI 接力協同，把工作一起完成。</p>
+      <p class="product-definition" data-i18n="productDefinition">Vorlinx 讓檔案整理與 AI 協作匯於一處。整理、連結與分組檔案資料，連接多個 AI 工具，協同完成任務。自然語言搜尋、文件閱讀、摹音朗讀、極簡 Markdown 編輯。檔案本地管理，內建 AI 本機執行，無訂閱，無雲端費用。</p>
     </section>
 
-    <figure class="hero-shot" aria-label="個人資料畫布：工作資料、常用檔案和最近在讀的書" data-i18n-aria="heroImageLabel"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/link-0be24ca463c8-720.webp 720w, /assets/optimized/zh-hant-tw/link-0be24ca463c8-1080.webp 1080w, /assets/optimized/zh-hant-tw/link-0be24ca463c8-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 56px), (max-width: 1000px) calc(100vw - 96px), (max-width: 1500px) calc(100vw - 160px), 1320px"><img src="/assets/optimized/zh-hant-tw/link-0be24ca463c8.png" data-screenshot="link" alt="個人資料畫布：工作資料、常用檔案和最近在讀的書" width="1440" height="900" decoding="async" loading="eager" fetchpriority="high" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/link-0be24ca463c8.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/link-0be24ca463c8-720.webp 720w, /assets/optimized/zh-hans-cn/link-0be24ca463c8-1080.webp 1080w, /assets/optimized/zh-hans-cn/link-0be24ca463c8-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/link-0be24ca463c8.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/link-0be24ca463c8-720.webp 720w, /assets/optimized/zh-hant-tw/link-0be24ca463c8-1080.webp 1080w, /assets/optimized/zh-hant-tw/link-0be24ca463c8-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/link-0be24ca463c8.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/link-0be24ca463c8-720.webp 720w, /assets/optimized/en-us/link-0be24ca463c8-1080.webp 1080w, /assets/optimized/en-us/link-0be24ca463c8-1440.webp 1440w&quot;}}"></picture></figure>
+    <figure class="hero-shot" aria-label="個人資料畫布：工作資料、常用檔案和最近在讀的書" data-i18n-aria="heroImageLabel"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/link-9c83b3db56cb-720.webp 720w, /assets/optimized/zh-hant-tw/link-9c83b3db56cb-1080.webp 1080w, /assets/optimized/zh-hant-tw/link-9c83b3db56cb-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 56px), (max-width: 1000px) calc(100vw - 96px), (max-width: 1500px) calc(100vw - 160px), 1320px"><img src="/assets/optimized/zh-hant-tw/link-9c83b3db56cb.png" data-screenshot="link" alt="個人資料畫布：工作資料、常用檔案和最近在讀的書" width="1440" height="900" decoding="async" loading="eager" fetchpriority="high" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/link-9c83b3db56cb.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/link-9c83b3db56cb-720.webp 720w, /assets/optimized/zh-hans-cn/link-9c83b3db56cb-1080.webp 1080w, /assets/optimized/zh-hans-cn/link-9c83b3db56cb-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/link-9c83b3db56cb.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/link-9c83b3db56cb-720.webp 720w, /assets/optimized/zh-hant-tw/link-9c83b3db56cb-1080.webp 1080w, /assets/optimized/zh-hant-tw/link-9c83b3db56cb-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/link-714062742e47.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/link-714062742e47-720.webp 720w, /assets/optimized/en-us/link-714062742e47-1080.webp 1080w, /assets/optimized/en-us/link-714062742e47-1440.webp 1440w&quot;}}"></picture></figure>
 <div class="feature-story shell">
 <section class="story-row image-left" aria-labelledby="groups-title"><figure class="visual groups-visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/groups-4d48ac5f624e-720.webp 720w, /assets/optimized/zh-hant-tw/groups-4d48ac5f624e-1080.webp 1080w, /assets/optimized/zh-hant-tw/groups-4d48ac5f624e-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px"><img src="/assets/optimized/zh-hant-tw/groups-4d48ac5f624e.png" data-screenshot="groups" alt="不同目錄的相關資料，放進同一個分組。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/groups-4d48ac5f624e.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/groups-4d48ac5f624e-720.webp 720w, /assets/optimized/zh-hans-cn/groups-4d48ac5f624e-1080.webp 1080w, /assets/optimized/zh-hans-cn/groups-4d48ac5f624e-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/groups-4d48ac5f624e.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/groups-4d48ac5f624e-720.webp 720w, /assets/optimized/zh-hant-tw/groups-4d48ac5f624e-1080.webp 1080w, /assets/optimized/zh-hant-tw/groups-4d48ac5f624e-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/groups-4d48ac5f624e.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/groups-4d48ac5f624e-720.webp 720w, /assets/optimized/en-us/groups-4d48ac5f624e-1080.webp 1080w, /assets/optimized/en-us/groups-4d48ac5f624e-1440.webp 1440w&quot;}}"></picture><figcaption data-i18n="groupsCaption">不同目錄的相關資料，放進同一個分組。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="groupsKicker">分組</p><h2 id="groups-title" data-i18n="groupsTitle">相關資料，<br>就在旁邊。</h2><p data-i18n="groupsBody">把不同資料夾裡的資料，按主題放進同一個分組。<br>需要時展開，繼續眼前的思路。</p></div></section>
 <section class="story-row image-right" aria-labelledby="pdf-title"><figure class="visual pdf-visual"><div class="screenshot-frame"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/pdf-8e0b7f9d6411-720.webp 720w, /assets/optimized/zh-hant-tw/pdf-8e0b7f9d6411-1080.webp 1080w, /assets/optimized/zh-hant-tw/pdf-8e0b7f9d6411-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px"><img src="/assets/optimized/zh-hant-tw/pdf-8e0b7f9d6411.png" data-screenshot="pdf" alt="標記重要段落，把想法留在便箋裡。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/pdf-8e0b7f9d6411.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/pdf-8e0b7f9d6411-720.webp 720w, /assets/optimized/zh-hans-cn/pdf-8e0b7f9d6411-1080.webp 1080w, /assets/optimized/zh-hans-cn/pdf-8e0b7f9d6411-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/pdf-8e0b7f9d6411.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/pdf-8e0b7f9d6411-720.webp 720w, /assets/optimized/zh-hant-tw/pdf-8e0b7f9d6411-1080.webp 1080w, /assets/optimized/zh-hant-tw/pdf-8e0b7f9d6411-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/pdf-8e0b7f9d6411.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/pdf-8e0b7f9d6411-720.webp 720w, /assets/optimized/en-us/pdf-8e0b7f9d6411-1080.webp 1080w, /assets/optimized/en-us/pdf-8e0b7f9d6411-1440.webp 1440w&quot;}}"></picture></div><figcaption data-i18n="pdfCaption">標記重要段落，把想法留在便箋裡。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="pdfKicker">PDF 閱讀</p><h2 id="pdf-title" data-i18n="pdfTitle">讀到哪裡，<br>想法就留在哪裡。</h2><p data-i18n="pdfBody">醒目標示、底線、刪除線，還有便箋。<br>把重要的段落和自己的理解，一起留下。</p></div></section>
@@ -115,7 +120,8 @@ img[data-screenshot]{cursor:zoom-in}img[data-screenshot]:focus-visible{outline:2
 <div class="story-copy"><p class="eyebrow" data-i18n="searchKicker">自然語言搜尋</p><h2 id="search-title" data-i18n="searchTitle">想不起名字，描述就好。</h2><p data-i18n="searchBody">用自然語言描述你記得的內容，從本地資料庫中找回文字、文件和圖片。</p></div>
 <figure class="visual search-visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/search-0026994ade7e-720.webp 720w, /assets/optimized/zh-hant-tw/search-0026994ade7e-1080.webp 1080w, /assets/optimized/zh-hant-tw/search-0026994ade7e-1453.webp 1453w" sizes="(max-width: 700px) calc(100vw - 72px), 760px"><img src="/assets/optimized/zh-hant-tw/search-0026994ade7e.png" data-screenshot="search" alt="記得內容，就有找回資料的線索。" width="1453" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1453,900],&quot;zh-Hant-TW&quot;:[1453,900],&quot;en-US&quot;:[1453,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1453,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/search-0026994ade7e.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/search-0026994ade7e-720.webp 720w, /assets/optimized/zh-hans-cn/search-0026994ade7e-1080.webp 1080w, /assets/optimized/zh-hans-cn/search-0026994ade7e-1453.webp 1453w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1453,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/search-0026994ade7e.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/search-0026994ade7e-720.webp 720w, /assets/optimized/zh-hant-tw/search-0026994ade7e-1080.webp 1080w, /assets/optimized/zh-hant-tw/search-0026994ade7e-1453.webp 1453w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1453,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/search-0026994ade7e.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/search-0026994ade7e-720.webp 720w, /assets/optimized/en-us/search-0026994ade7e-1080.webp 1080w, /assets/optimized/en-us/search-0026994ade7e-1453.webp 1453w&quot;}}"></picture><figcaption data-i18n="searchCaption">記得內容，就有找回資料的線索。</figcaption></figure>
 </section>
-<section class="story-row image-right" aria-labelledby="mcp-title"><div class="story-copy"><p class="eyebrow" data-i18n="mcpKicker">與 AI 助手協作</p><h2 id="mcp-title" data-i18n="mcpTitle">說出你想做的，<br>讓 AI 助手幫你操作。</h2><p data-i18n="mcpBody">透過 MCP，讓支援它的 AI 助手與 Vorlinx 配合。<br>一句話開啟文件、跳轉頁面，或開始朗讀。</p><p class="roadmap-note" data-i18n="mcpNote">Vorlinx 的內建 AI 在本地執行；連接外部 AI 助手後，交給助手的資訊如何處理，取決於該助手的服務與設定。</p></div><figure class="visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1439.webp 1439w" sizes="(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px"><img data-screenshot="mcp" src="/assets/optimized/zh-hant-tw/mcp-302c32ee02a5.png" alt="在 Codex 中，讓 Vorlinx 開啟《老人與海》，翻到指定頁並開始朗讀。" width="1439" height="898" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1439,898],&quot;zh-Hant-TW&quot;:[1439,898],&quot;en-US&quot;:[1439,898]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1439,&quot;height&quot;:898,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/mcp-302c32ee02a5.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/zh-hans-cn/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/zh-hans-cn/mcp-302c32ee02a5-1439.webp 1439w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1439,&quot;height&quot;:898,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/mcp-302c32ee02a5.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1439.webp 1439w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1439,&quot;height&quot;:898,&quot;src&quot;:&quot;/assets/optimized/en-us/mcp-302c32ee02a5.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/en-us/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/en-us/mcp-302c32ee02a5-1439.webp 1439w&quot;}}"></picture><figcaption data-i18n="mcpCaption">在 Codex 中，讓 Vorlinx 開啟《老人與海》，翻到指定頁並開始朗讀。</figcaption></figure></section>
+<section class="relay-story" aria-labelledby="relay-title"><div class="story-copy"><p class="eyebrow" data-i18n="relayKicker">AI 接力</p><h2 id="relay-title" data-i18n="relayTitle">不同 AI，各展所長。<br>一份工作，多個 AI 接力協同完成。</h2><p data-i18n="relayBody">圍繞同一個工作目標分派任務，讓不同 AI 共享目前的工作上下文，協同推進工作。</p></div><ol class="relay-steps"><li data-i18n="relayStep1">建立 AI 接力</li><li data-i18n="relayStep2">分派任務</li><li data-i18n="relayStep3">AI 之間協同</li><li data-i18n="relayStep4">完成工作</li></ol><figure class="visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-720.webp 720w, /assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-1080.webp 1080w, /assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 72px), 760px"><img data-screenshot="ai-relay" src="/assets/optimized/zh-hant-tw/ai-relay-de298e15b76d.png" width="1440" height="900" loading="lazy" alt="在一份 AI 接力中，共同對齊目標、遵照要求、推進工作，協同完成任務。" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/ai-relay-de298e15b76d.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/ai-relay-de298e15b76d-720.webp 720w, /assets/optimized/zh-hans-cn/ai-relay-de298e15b76d-1080.webp 1080w, /assets/optimized/zh-hans-cn/ai-relay-de298e15b76d-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/ai-relay-de298e15b76d.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-720.webp 720w, /assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-1080.webp 1080w, /assets/optimized/zh-hant-tw/ai-relay-de298e15b76d-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/ai-relay-1c950ecb532e.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/ai-relay-1c950ecb532e-720.webp 720w, /assets/optimized/en-us/ai-relay-1c950ecb532e-1080.webp 1080w, /assets/optimized/en-us/ai-relay-1c950ecb532e-1440.webp 1440w&quot;}}"></picture><figcaption data-i18n="relayCaption">在一份 AI 接力中，共同對齊目標、遵照要求、推進工作，協同完成任務。</figcaption></figure></section>
+<section class="story-row image-right" aria-labelledby="mcp-title"><div class="story-copy"><p class="eyebrow" data-i18n="mcpKicker">AI 文件助手</p><h2 id="mcp-title" data-i18n="mcpTitle">想讀哪一份，<br>告訴 AI 助手。</h2><p data-i18n="mcpBody">透過 MCP，讓支援它的 AI 助手操作 Vorlinx。<br>開啟文件、跳轉頁面，或開始朗讀，用一句話完成。</p></div><figure class="visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1439.webp 1439w" sizes="(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px"><img data-screenshot="mcp" src="/assets/optimized/zh-hant-tw/mcp-302c32ee02a5.png" alt="在 Codex 中，讓 Vorlinx 開啟《老人與海》，翻到指定頁並開始朗讀。" width="1439" height="898" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1439,898],&quot;zh-Hant-TW&quot;:[1439,898],&quot;en-US&quot;:[1439,898]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1439,&quot;height&quot;:898,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/mcp-302c32ee02a5.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/zh-hans-cn/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/zh-hans-cn/mcp-302c32ee02a5-1439.webp 1439w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1439,&quot;height&quot;:898,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/mcp-302c32ee02a5.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/zh-hant-tw/mcp-302c32ee02a5-1439.webp 1439w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1439,&quot;height&quot;:898,&quot;src&quot;:&quot;/assets/optimized/en-us/mcp-302c32ee02a5.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/mcp-302c32ee02a5-720.webp 720w, /assets/optimized/en-us/mcp-302c32ee02a5-1080.webp 1080w, /assets/optimized/en-us/mcp-302c32ee02a5-1439.webp 1439w&quot;}}"></picture><figcaption data-i18n="mcpCaption">在 Codex 中，讓 Vorlinx 開啟《老人與海》，翻到指定頁並開始朗讀。</figcaption></figure></section>
 <section class="story-row image-left" aria-labelledby="import-title"><figure class="visual import-visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/import-63e5b0dadf44-720.webp 720w, /assets/optimized/zh-hant-tw/import-63e5b0dadf44-1080.webp 1080w, /assets/optimized/zh-hant-tw/import-63e5b0dadf44-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px"><img src="/assets/optimized/zh-hant-tw/import-63e5b0dadf44.png" data-screenshot="import" alt="掃碼或開啟連結，從手機匯入檔案。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/import-63e5b0dadf44.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/import-63e5b0dadf44-720.webp 720w, /assets/optimized/zh-hans-cn/import-63e5b0dadf44-1080.webp 1080w, /assets/optimized/zh-hans-cn/import-63e5b0dadf44-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/import-63e5b0dadf44.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/import-63e5b0dadf44-720.webp 720w, /assets/optimized/zh-hant-tw/import-63e5b0dadf44-1080.webp 1080w, /assets/optimized/zh-hant-tw/import-63e5b0dadf44-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/import-63e5b0dadf44.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/import-63e5b0dadf44-720.webp 720w, /assets/optimized/en-us/import-63e5b0dadf44-1080.webp 1080w, /assets/optimized/en-us/import-63e5b0dadf44-1440.webp 1440w&quot;}}"></picture><figcaption data-i18n="importCaption">掃碼或開啟連結，從手機匯入檔案。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="importKicker">跨裝置匯入</p><h2 id="import-title" data-i18n="importTitle">手機裡的資料，<br>直接送到電腦。</h2><p data-i18n="importBody">手機或 Windows 電腦，連接同一區域網路。<br>掃碼或開啟連結，把檔案匯入 Vorlinx。</p></div></section>
 <section class="sharing-story" aria-labelledby="sharing-title"><div class="story-copy"><p class="eyebrow" data-i18n="sharingKicker">區域網路分享</p><h2 id="sharing-title" data-i18n="sharingTitle">資料散落各處，<br>也能一起打包分享。</h2><p data-i18n="sharingBody">把一份或多份檔案一起分享，設定密碼與有效期限。<br>對方透過瀏覽器存取，你隨時可以停止。</p></div><div class="sharing-pair"><figure class="visual sharing-visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/sharing-7db5e62071ed-720.webp 720w, /assets/optimized/zh-hant-tw/sharing-7db5e62071ed-1080.webp 1080w, /assets/optimized/zh-hant-tw/sharing-7db5e62071ed-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px"><img src="/assets/optimized/zh-hant-tw/sharing-7db5e62071ed.png" data-screenshot="sharing" alt="彙集所需檔案，為分享設定密碼與有效期限。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/sharing-7db5e62071ed.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/sharing-7db5e62071ed-720.webp 720w, /assets/optimized/zh-hans-cn/sharing-7db5e62071ed-1080.webp 1080w, /assets/optimized/zh-hans-cn/sharing-7db5e62071ed-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/sharing-7db5e62071ed.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/sharing-7db5e62071ed-720.webp 720w, /assets/optimized/zh-hant-tw/sharing-7db5e62071ed-1080.webp 1080w, /assets/optimized/zh-hant-tw/sharing-7db5e62071ed-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/sharing-7db5e62071ed.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/sharing-7db5e62071ed-720.webp 720w, /assets/optimized/en-us/sharing-7db5e62071ed-1080.webp 1080w, /assets/optimized/en-us/sharing-7db5e62071ed-1440.webp 1440w&quot;}}"></picture><figcaption data-i18n="sharingCaption">彙集所需檔案，為分享設定密碼與有效期限。</figcaption></figure><figure class="visual recipient-visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/recipient-e1a43c471770-720.webp 720w, /assets/optimized/zh-hant-tw/recipient-e1a43c471770-1080.webp 1080w, /assets/optimized/zh-hant-tw/recipient-e1a43c471770-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px"><img src="/assets/optimized/zh-hant-tw/recipient-e1a43c471770.png" data-screenshot="recipient" alt="透過瀏覽器存取，按需預覽或下載檔案。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/recipient-e1a43c471770.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/recipient-e1a43c471770-720.webp 720w, /assets/optimized/zh-hans-cn/recipient-e1a43c471770-1080.webp 1080w, /assets/optimized/zh-hans-cn/recipient-e1a43c471770-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/recipient-e1a43c471770.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/recipient-e1a43c471770-720.webp 720w, /assets/optimized/zh-hant-tw/recipient-e1a43c471770-1080.webp 1080w, /assets/optimized/zh-hant-tw/recipient-e1a43c471770-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/recipient-e1a43c471770.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/recipient-e1a43c471770-720.webp 720w, /assets/optimized/en-us/recipient-e1a43c471770-1080.webp 1080w, /assets/optimized/en-us/recipient-e1a43c471770-1440.webp 1440w&quot;}}"></picture><figcaption data-i18n="recipientCaption">透過瀏覽器存取，按需預覽或下載檔案。</figcaption></figure></div></section>
 <section class="story-row image-left" aria-labelledby="backup-title"><figure class="visual backup-visual"><picture class="responsive-shot"><source type="image/webp" srcset="/assets/optimized/zh-hant-tw/backup-2e2116f76939-720.webp 720w, /assets/optimized/zh-hant-tw/backup-2e2116f76939-1080.webp 1080w, /assets/optimized/zh-hant-tw/backup-2e2116f76939-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 72px), (max-width: 1000px) 50vw, 620px"><img src="/assets/optimized/zh-hant-tw/backup-2e2116f76939.png" data-screenshot="backup" alt="先加密，再將備份儲存到你指定的目錄。" width="1440" height="900" decoding="async" loading="lazy" data-dimensions="{&quot;zh-Hans-CN&quot;:[1440,900],&quot;zh-Hant-TW&quot;:[1440,900],&quot;en-US&quot;:[1440,900]}" data-resources="{&quot;zh-Hans-CN&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hans-cn/backup-2e2116f76939.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hans-cn/backup-2e2116f76939-720.webp 720w, /assets/optimized/zh-hans-cn/backup-2e2116f76939-1080.webp 1080w, /assets/optimized/zh-hans-cn/backup-2e2116f76939-1440.webp 1440w&quot;},&quot;zh-Hant-TW&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/zh-hant-tw/backup-2e2116f76939.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/zh-hant-tw/backup-2e2116f76939-720.webp 720w, /assets/optimized/zh-hant-tw/backup-2e2116f76939-1080.webp 1080w, /assets/optimized/zh-hant-tw/backup-2e2116f76939-1440.webp 1440w&quot;},&quot;en-US&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900,&quot;src&quot;:&quot;/assets/optimized/en-us/backup-2e2116f76939.png&quot;,&quot;srcset&quot;:&quot;/assets/optimized/en-us/backup-2e2116f76939-720.webp 720w, /assets/optimized/en-us/backup-2e2116f76939-1080.webp 1080w, /assets/optimized/en-us/backup-2e2116f76939-1440.webp 1440w&quot;}}"></picture><figcaption data-i18n="backupCaption">先加密，再將備份儲存到你指定的目錄。</figcaption></figure><div class="story-copy"><p class="eyebrow" data-i18n="backupKicker">加密備份</p><h2 id="backup-title" data-i18n="backupTitle">安心整理，<br>也妥善保存。</h2><p class="backup-promise" data-i18n="backupPromise">先加密，再儲存。</p><p data-i18n="backupBody">自動加密備份到你指定的目錄。<br>選擇本地目錄，或由你現有的同步服務同步的資料夾。</p><p class="roadmap-note" data-i18n="backupRoadmap">後續計畫：未來版本將逐步支援將加密備份同步至多個雲端儲存服務。</p></div></section>
@@ -138,7 +144,7 @@ img[data-screenshot]{cursor:zoom-in}img[data-screenshot]:focus-visible{outline:2
 <nav class="footer-column"><h2 data-i18n="footerProduct">產品</h2><button type="button" data-download data-i18n="download">下載</button><a href="/zh-hant-tw/about/" data-page-link="about" data-i18n="footerAbout">關於 Vorlinx</a></nav>
 <nav class="footer-column"><h2 data-i18n="footerHelp">說明</h2><a href="/zh-hant-tw/faq/" data-page-link="faq" data-i18n="footerFaq">常見問題</a><a href="/zh-hant-tw/support/" data-page-link="support" data-i18n="footerSupport">支援與聯絡</a></nav>
 <nav class="footer-column"><h2 data-i18n="footerMore">瞭解更多</h2><a href="/zh-hant-tw/privacy/" data-page-link="privacy" data-i18n="footerPrivacy">隱私權政策</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" data-i18n="footerLicense">使用者授權</a><a href="https://www.dekuan.org" target="_blank" rel="noopener noreferrer" data-i18n="footerCompany">德寬科技</a></nav>
-</div><div class="footer-bottom shell"><span>© Vorlinx</span><span data-i18n="tagline">檔案一眼看全，整理與連結，隨你所願。</span></div></footer>
+</div><div class="footer-bottom shell"><span>© Vorlinx</span><span data-i18n="tagline">檔案一眼看全，連結隨你所願。</span></div></footer>
   <dialog id="download-dialog" aria-labelledby="download-title"><div class="dialog-heading">
 <h2 id="download-title">Vorlinx · macOS</h2>
 <button type="button" id="close-download" aria-label="關閉下載說明" data-i18n-aria="closeDownload">×</button>
@@ -226,14 +232,8 @@ const messages = {
     "download": "下载",
     "languageLabel": "选择语言",
     "localLabel": "本地 AI · 无订阅 · 无云端费用",
-    "heroTitle": [
-      "文件一眼看全，",
-      "整理与连接，随你所愿。"
-    ],
-    "heroCopy": [
-      "将散落的资料放在一张画布上，",
-      "自由连接、分组，随时阅读与编辑。"
-    ],
+    "heroTitle": ["文件一眼看全，", "连接随你所愿。"],
+    "heroCopy": ["在一张画布上组织资料，", "让多个 AI 接力协同，把工作一起完成。"],
     "heroImageLabel": "个人资料画布：工作资料、常用文件和最近在读的书",
     "groupsKicker": "分组",
     "groupsTitle": [
@@ -278,7 +278,7 @@ const messages = {
     "sharingCaption": "汇集所需文件，为分享设置密码与有效期。",
     "privacyTitle": "私人的文件，自在的本地空间。",
     "privacyBody": "文件、语义索引与 AI 模型都留在设备上。整理、搜索与朗读，无需上传。",
-    "tagline": "文件一眼看全，整理与连接，随你所愿。",
+    "tagline": "文件一眼看全，连接随你所愿。",
     "closeDownload": "关闭下载说明",
     "downloadPending": "即将登陆 Mac App Store。",
     "downloadDescription": "正式上架后，这里将前往 App Store 下载 Vorlinx。",
@@ -293,9 +293,17 @@ const messages = {
       "把重要的段落和自己的理解，一起留下。"
     ],
     "pdfCaption": "标记重要段落，把想法留在便签里。",
-    "mcpKicker": "与 AI 助手协作",
-    "mcpTitle": ["说出你想做的，", "让 AI 助手帮你操作。"],
-    "mcpBody": ["通过 MCP，让支持它的 AI 助手与 Vorlinx 配合。", "一句话打开文档、跳转页面，或开始朗读。"],
+    "relayKicker": "AI 接力",
+    "relayTitle": ["不同 AI，各展所长。", "一份工作，多个 AI 接力协同完成。"],
+    "relayBody": "围绕同一个工作目标分派任务，让不同 AI 共享当前工作上下文，协同推进工作。",
+    "relayStep1": "创建 AI 接力",
+    "relayStep2": "分派任务",
+    "relayStep3": "AI 之间协同",
+    "relayStep4": "完成工作",
+    "relayCaption": "在一份 AI 接力中，共同对齐目标、遵照要求、推进工作，协同完成任务。",
+    "mcpKicker": "AI 文档助手",
+    "mcpTitle": ["想读哪一份，", "告诉 AI 助手。"],
+    "mcpBody": ["通过 MCP，让支持它的 AI 助手操作 Vorlinx。", "打开文档、跳转页面，或开始朗读，用一句话完成。"],
     "mcpCaption": "在 Codex 中，让 Vorlinx 打开《老人与海》，翻到指定页并开始朗读。",
     "mcpNote": "Vorlinx 的内置 AI 在本地运行；连接外部 AI 助手后，交给助手的信息如何处理，取决于该助手的服务与设置。",
     "importKicker": "跨设备导入",
@@ -324,7 +332,7 @@ const messages = {
     "searchTitle": "想不起名字，描述就好。",
     "searchBody": "用自然语言描述你记得的内容，从本地资料库中找回文字、文档和图片。",
     "searchCaption": "记得内容，就有找回资料的线索。",
-    "productDefinition": "Vorlinx 是一款 macOS 纯本地个人文件管理应用。连接、分组不同文件夹中的资料，支持自然语言搜索、文档阅读与自定义音色朗读，以及极简 Markdown 编辑。 文件与 AI 模型都在你的设备上，无需上传，离线使用。",
+    "productDefinition": "Vorlinx 让文件整理与 AI 协作汇于一处。整理、连接与分组文件资料，连接多个 AI 工具，协同完成任务。自然语言搜索、文档阅读、摹音朗读、极简 Markdown 编辑。文件本地管理，内置 AI 本机运行，无订阅，无云端费用。",
     "seoTitle": "Vorlinx｜内置本地 AI 的 macOS 文件管理应用",
     "footerFaq": "常见问题",
     "footerCompany": "德宽科技",
@@ -401,14 +409,8 @@ const messages = {
     "download": "下載",
     "languageLabel": "選擇語言",
     "localLabel": "本地 AI · 無訂閱 · 無雲端費用",
-    "heroTitle": [
-      "檔案一眼看全，",
-      "整理與連結，隨你所願。"
-    ],
-    "heroCopy": [
-      "將散落的資料放在一張畫布上，",
-      "自由連結、分組，隨時閱讀與編輯。"
-    ],
+    "heroTitle": ["檔案一眼看全，", "連結隨你所願。"],
+    "heroCopy": ["在一張畫布上組織資料，", "讓多個 AI 接力協同，把工作一起完成。"],
     "heroImageLabel": "個人資料畫布：工作資料、常用檔案和最近在讀的書",
     "groupsKicker": "分組",
     "groupsTitle": [
@@ -453,7 +455,7 @@ const messages = {
     "sharingCaption": "彙集所需檔案，為分享設定密碼與有效期限。",
     "privacyTitle": "私人的檔案，自在的本地空間。",
     "privacyBody": "檔案、語意索引與 AI 模型都留在裝置上。整理、搜尋與朗讀，無需上傳。",
-    "tagline": "檔案一眼看全，整理與連結，隨你所願。",
+    "tagline": "檔案一眼看全，連結隨你所願。",
     "closeDownload": "關閉下載說明",
     "downloadPending": "即將登陸 Mac App Store。",
     "downloadDescription": "正式上架後，這裡將前往 App Store 下載 Vorlinx。",
@@ -468,9 +470,17 @@ const messages = {
       "把重要的段落和自己的理解，一起留下。"
     ],
     "pdfCaption": "標記重要段落，把想法留在便箋裡。",
-    "mcpKicker": "與 AI 助手協作",
-    "mcpTitle": ["說出你想做的，", "讓 AI 助手幫你操作。"],
-    "mcpBody": ["透過 MCP，讓支援它的 AI 助手與 Vorlinx 配合。", "一句話開啟文件、跳轉頁面，或開始朗讀。"],
+    "relayKicker": "AI 接力",
+    "relayTitle": ["不同 AI，各展所長。", "一份工作，多個 AI 接力協同完成。"],
+    "relayBody": "圍繞同一個工作目標分派任務，讓不同 AI 共享目前的工作上下文，協同推進工作。",
+    "relayStep1": "建立 AI 接力",
+    "relayStep2": "分派任務",
+    "relayStep3": "AI 之間協同",
+    "relayStep4": "完成工作",
+    "relayCaption": "在一份 AI 接力中，共同對齊目標、遵照要求、推進工作，協同完成任務。",
+    "mcpKicker": "AI 文件助手",
+    "mcpTitle": ["想讀哪一份，", "告訴 AI 助手。"],
+    "mcpBody": ["透過 MCP，讓支援它的 AI 助手操作 Vorlinx。", "開啟文件、跳轉頁面，或開始朗讀，用一句話完成。"],
     "mcpCaption": "在 Codex 中，讓 Vorlinx 開啟《老人與海》，翻到指定頁並開始朗讀。",
     "mcpNote": "Vorlinx 的內建 AI 在本地執行；連接外部 AI 助手後，交給助手的資訊如何處理，取決於該助手的服務與設定。",
     "importKicker": "跨裝置匯入",
@@ -499,7 +509,7 @@ const messages = {
     "searchTitle": "想不起名字，描述就好。",
     "searchBody": "用自然語言描述你記得的內容，從本地資料庫中找回文字、文件和圖片。",
     "searchCaption": "記得內容，就有找回資料的線索。",
-    "productDefinition": "Vorlinx 是一款 macOS 純本地個人檔案管理應用程式。連結、分組不同資料夾中的資料，支援自然語言搜尋、文件閱讀與自訂音色朗讀，以及極簡 Markdown 編輯。 檔案與 AI 模型都在你的裝置上，無需上傳，離線使用。",
+    "productDefinition": "Vorlinx 讓檔案整理與 AI 協作匯於一處。整理、連結與分組檔案資料，連接多個 AI 工具，協同完成任務。自然語言搜尋、文件閱讀、摹音朗讀、極簡 Markdown 編輯。檔案本地管理，內建 AI 本機執行，無訂閱，無雲端費用。",
     "seoTitle": "Vorlinx｜內建本地 AI 的 macOS 檔案管理應用程式",
     "footerFaq": "常見問題",
     "footerCompany": "德寬科技",
@@ -576,14 +586,8 @@ const messages = {
     "download": "Download",
     "languageLabel": "Choose language",
     "localLabel": "Local AI · No subscription · No cloud fees",
-    "heroTitle": [
-      "Your files at a glance.",
-      "Organize and link your way."
-    ],
-    "heroCopy": [
-      "Bring scattered files together on one canvas.",
-      "Link, group, read and edit. Your way."
-    ],
+    "heroTitle": ["All your files at a glance.", "Link your way."],
+    "heroCopy": ["Organize your files on one canvas.", "Let multiple AI assistants collaborate and hand off work to get the job done."],
     "heroImageLabel": "Personal file canvas with work, everyday files and current reading",
     "groupsKicker": "Groups",
     "groupsTitle": [
@@ -628,7 +632,7 @@ const messages = {
     "sharingCaption": "Gather the files you need and set a password and expiry.",
     "privacyTitle": "Personal files. Your own local space.",
     "privacyBody": "Files, semantic indexes and AI models stay on your device. Organize, search and listen without uploading.",
-    "tagline": "Your files at a glance. Organize and link your way.",
+    "tagline": "All your files at a glance. Link your way.",
     "closeDownload": "Close download information",
     "downloadPending": "Coming to the Mac App Store.",
     "downloadDescription": "Once available, this button will open Vorlinx on the App Store.",
@@ -643,9 +647,17 @@ const messages = {
       "Keep important passages and your own thoughts together."
     ],
     "pdfCaption": "Mark important passages and keep your thoughts in notes.",
-    "mcpKicker": "Work with your AI assistant",
-    "mcpTitle": ["Say what you want to do.", "Let your AI assistant help."],
-    "mcpBody": ["Connect an MCP-compatible AI assistant to Vorlinx.", "Ask it to open a document, jump to a page, or start reading aloud."],
+    "relayKicker": "AI Relay",
+    "relayTitle": ["Different AI strengths.", "Working together to get the job done."],
+    "relayBody": "Assign tasks toward a shared work goal. Let different AI assistants share the current work context and move the work forward together.",
+    "relayStep1": "Create an AI Relay",
+    "relayStep2": "Assign tasks",
+    "relayStep3": "Collaborate across AI",
+    "relayStep4": "Complete the work",
+    "relayCaption": "Align on goals and requirements, move work forward, and complete tasks together in one AI Relay.",
+    "mcpKicker": "AI document assistant",
+    "mcpTitle": ["Tell your AI assistant", "what you want to read."],
+    "mcpBody": ["Use MCP to let a compatible AI assistant work with Vorlinx.", "Ask it to open a document, jump to a page, or start reading aloud."],
     "mcpCaption": "Ask Codex to open The Old Man and the Sea in Vorlinx, jump to a page, and read aloud.",
     "mcpNote": "Vorlinx’s built-in AI runs locally. When you connect an external AI assistant, information shared with it is handled according to that assistant’s service and settings.",
     "importKicker": "Import across devices",
@@ -674,7 +686,7 @@ const messages = {
     "searchTitle": "Describe it. Find it.",
     "searchBody": "Describe what you remember in natural language to find text, documents and images in your local library.",
     "searchCaption": "What you remember is a clue to finding your files.",
-    "productDefinition": "Vorlinx is a local-first personal file manager for macOS. Link and group files across folders, search in natural language, read documents, listen in a custom voice, and write in a minimal Markdown editor. Your files and AI models stay on your device. No uploads. Works offline.",
+    "productDefinition": "Vorlinx brings file organization and AI collaboration together. Organize, link and group your files. Bring multiple AI tools together to complete tasks. Search in natural language, read documents, listen with voice cloning, and write in a minimal Markdown editor. Files stay local. Built-in AI runs on your Mac. No subscription. No cloud fees.",
     "seoTitle": "Vorlinx | A macOS File Manager with Built-in Local AI",
     "footerFaq": "Common questions",
     "footerCompany": "Dekuan Technology",
@@ -767,7 +779,7 @@ function normalizeLanguage(value) {
 }
 const screenshotLabels = {
   link:'heroImageLabel', groups:'groupsCaption', pdf:'pdfCaption',
-  files:'filesCaption', reading:'readingCaption', search:'searchCaption', mcp:'mcpCaption', import:'importCaption',
+  files:'filesCaption', reading:'readingCaption', search:'searchCaption', mcp:'mcpCaption', 'ai-relay':'relayCaption', import:'importCaption',
   sharing:'sharingCaption', recipient:'recipientCaption', backup:'backupCaption'
 };
 const languageControl = document.querySelector('.language-control');
@@ -826,6 +838,17 @@ function renderLocalizedText(element, value) {
   element.replaceChildren();
   (Array.isArray(value) ? value : [value]).forEach((line, index) => {
     if (index) element.append(document.createElement('br'));
+    if (element.hasAttribute('data-highlight-title') && index === 1) {
+      const match = line.match(/连接|連結|Link/);
+      if (match) {
+        element.append(document.createTextNode(line.slice(0, match.index)));
+        const highlight = document.createElement('span');
+        highlight.className = 'hero-link-highlight';
+        highlight.textContent = match[0];
+        element.append(highlight, document.createTextNode(line.slice(match.index + match[0].length)));
+        return;
+      }
+    }
     element.append(document.createTextNode(line));
   });
 }

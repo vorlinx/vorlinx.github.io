@@ -7,7 +7,7 @@ import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const config=JSON.parse(fs.readFileSync(path.join(root,'site.config.json'),'utf8'));
-const names=['link','groups','pdf','files','reading','search','mcp','import','sharing','recipient','backup'];
+const names=['link','groups','pdf','files','reading','search','ai-relay','mcp','import','sharing','recipient','backup'];
 const manifest={};let created=0;
 for(const language of config.languages){
  manifest[language]={};
