@@ -58,7 +58,7 @@ const pageKeys={faq:'pageFaqTitle',privacy:'pagePrivacyTitle',support:'pageSuppo
 function information(copy,page){
  const p=key=>`<p data-i18n="${key}">${escape(copy[key])}</p>`;
  const pair=key=>`<h2 data-i18n="${key}Q">${escape(copy[key+'Q'])}</h2>`+p(key+'A');
- const body=page==='404' ? p('error404Body') : page==='faq' ? ['faqLocal','faqModels','faqStart','faqSystem','faqShare','faqBackup'].map(pair).join('')+p('backupRoadmap')
+ const body=page==='404' ? p('error404Body') : page==='faq' ? ['faqRelay','faqDocument','faqLocal','faqModels','faqStart','faqSystem','faqShare','faqBackup'].map(pair).join('')+p('backupRoadmap')
   :page==='privacy' ? p('policyIntro')+['policyCollection','policyLocal','policyPermissions','policyNetwork','policySharing','policyBackup','policyRetention','policyContact'].map(pair).join('')
   :page==='support' ? pair('supportDownload')+p('supportRecommended')+'<section id="contact">'+pair('supportContact')+'</section><h2 data-i18n="footerLicense">'+escape(copy.footerLicense)+'</h2>'+p('licenseBody')+'<p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" data-i18n="licenseLink">'+escape(copy.licenseLink)+'</a></p>'
   :'<h2 data-i18n="aboutTitle">'+escape(copy.aboutTitle)+'</h2>'+p('aboutBody')+p('productDefinition');
@@ -85,7 +85,7 @@ function render(language,page=''){
  const title=page ? copy[pageKeys[page]]+" | Vorlinx" : copy.seoTitle,description=page==='404'?copy.error404Body:page?copy[page+'Description']:copy.seoDescription,image=url(images[language].link.src);
  const schema={'@context':'https://schema.org','@graph':[
   {'@type':'WebSite','@id':url('/#website'),name:'Vorlinx',url:url(languagePath(language)),inLanguage:language},
-  {'@type':'SoftwareApplication','@id':url('/#software'),name:'Vorlinx',url:canonical,operatingSystem:'macOS',applicationCategory:'UtilitiesApplication',description,inLanguage:language,screenshot:image}
+  {'@type':'SoftwareApplication','@id':url('/#software'),name:'Vorlinx',url:canonical,operatingSystem:'macOS',applicationCategory:'UtilitiesApplication',description,inLanguage:language,screenshot:image,featureList:['relayBody','mcpBody','groupsBody','searchBody','pdfBody','readingBody','filesBody','backupBody'].map(key=>Array.isArray(copy[key])?copy[key].join(' '):copy[key])}
  ]};
  if(page) schema['@graph'][1]={'@type':'WebPage','@id':canonical+'#page',name:copy[pageKeys[page]],url:canonical,inLanguage:language,description};
  const meta=[`<title>${escape(title)}</title>`,`<meta name="description" content="${escape(description)}">`,`<meta name="robots" content="${page==='404'?'noindex, follow':'index, follow'}">`,`<link rel="canonical" href="${canonical}">`,
@@ -105,3 +105,16 @@ const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www
 fs.writeFileSync(path.join(root,'sitemap.xml'),sitemap);
 fs.writeFileSync(path.join(root,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${url('/sitemap.xml')}\n`);
 console.log('Generated inline HTML for 18 localized pages + root + 404, sitemap.xml and robots.txt.');
+
+const aiGuide=['# Vorlinx','', '> '+messages['en-US'].seoDescription,'',
+ 'Official website: '+url('/'),'',
+ '## Language pages',...config.languages.map(l=>`- [${names[l]}](${url(languagePath(l))}): ${messages[l].seoDescription}`),''];
+for(const language of config.languages){
+ const copy=messages[language];
+ aiGuide.push(`## ${names[language]}`, '', copy.tagline, '', copy.productDefinition, '',
+ `### ${copy.relayKicker}`,copy.relayBody, '', copy.faqRelayA, '',
+ `### ${copy.mcpKicker}`,...(Array.isArray(copy.mcpBody)?copy.mcpBody:[copy.mcpBody]),'',copy.faqDocumentA,'',
+ `### ${copy.footerMore}`,
+ ...['faq','about','privacy','support'].map(page=>`- [${copy[pageKeys[page]]}](${url(languagePath(language,page))})`),'');
+}
+writeFile(path.join(root,'llms.txt'),aiGuide.join('\n')+'\n');

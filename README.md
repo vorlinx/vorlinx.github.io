@@ -85,3 +85,9 @@ assets/en-us/
 将仓库推送至 GitHub，Settings → Pages 发布源选择 `main`、根目录 `/`。`.nojekyll` 保证静态文件直接提供。网站地址以 `site.config.json` 配置为准。
 
 当前正式域名为 https://vorlinx.dekuan.org/，仓库根目录 `CNAME` 为 `vorlinx.dekuan.org`。Google Search Console 应使用这个域名的网址前缀，提交 https://vorlinx.dekuan.org/sitemap.xml；旧域名若已有收录，还需在平台完成相应迁移检查。
+
+### SEO 与 AI 检索内容同步
+
+搜索标题、摘要、社交分享与结构化描述来自 `i18n.js` 的同一套多语言文案；首页结构化功能列表也包含 AI 接力与 AI 文档助手。FAQ 与关于页面提供可直接抓取的说明。
+
+`node scripts/build-site.mjs` 同时生成 `llms.txt`，包含三种语言的正式产品说明与页面链接，作为可选的 AI 阅读入口，不保证第三方采用或收录。无需手工维护这份生成文件。`robots.txt` 保持允许抓取并指向站点地图。`node scripts/check-site.mjs` 会检查元信息、结构化功能、FAQ 与 AI 阅读入口是否使用最新文案。

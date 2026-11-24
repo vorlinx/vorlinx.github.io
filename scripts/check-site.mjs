@@ -78,3 +78,26 @@ for(const language of config.languages)for(const page of ['', 'faq','privacy','s
 assert.ok(fs.existsSync(path.join(root,'404.html')));
 assert.ok(!fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').includes('/404/'));
 console.log('PASS: 18 self-contained pages, inline JS syntax, unique descriptions, responsive images and noindex 404.');
+
+// Product positioning must reach metadata, structured data and the optional AI guide.
+const escapeHTML=value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+const aiGuide=fs.readFileSync(path.join(root,'llms.txt'),'utf8');
+for(const language of config.languages){
+ const copy=ctx.messages[language],locale=language.toLowerCase();
+ const html=documentHTML(path.join(root,locale,'index.html'));
+ const schema=JSON.parse(html.match(/<script type="application\/ld\+json" id="site-schema">([\s\S]*?)<\/script>/)[1]);
+ assert.ok(html.includes(`<title>${escapeHTML(copy.seoTitle)}</title>`));
+ for(const attribute of ['name="description"','property="og:description"','name="twitter:description"']){
+  assert.ok(html.includes(`${attribute} content="${escapeHTML(copy.seoDescription)}"`),`${language}: stale metadata ${attribute}`);
+ }
+ assert.equal(schema['@graph'][1].description,copy.seoDescription);
+ assert.ok(schema['@graph'][1].featureList.includes(copy.relayBody));
+ const faq=documentHTML(path.join(root,locale,'faq/index.html'));
+ for(const key of ['faqRelayQ','faqRelayA','faqDocumentQ','faqDocumentA']) assert.ok(faq.includes(copy[key]),`${language}: missing ${key}`);
+ for(const key of ['tagline','productDefinition','relayBody','faqRelayA','faqDocumentA'])assert.ok(aiGuide.includes(copy[key]),`${language}: stale AI guide ${key}`);
+ assert.ok(aiGuide.includes(`${config.baseUrl}${locale}/`));
+}
+const robots=fs.readFileSync(path.join(root,'robots.txt'),'utf8');
+assert.ok(robots.includes('User-agent: *\nAllow: /'));
+assert.ok(robots.includes(`Sitemap: ${config.baseUrl}sitemap.xml`));
+console.log('PASS: current positioning in multilingual search/social metadata, structured features, FAQ and generated llms.txt; crawling allowed.');

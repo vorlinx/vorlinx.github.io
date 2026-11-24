@@ -1,0 +1,80 @@
+# Vorlinx
+
+> Organize and link files on your Mac. Use AI Relay for multi-AI collaboration and AI Document Assistant for reading. Local AI search, voice cloning, Markdown editing and encrypted backups.
+
+Official website: https://vorlinx.dekuan.org/
+
+## Language pages
+- [简体中文](https://vorlinx.dekuan.org/zh-hans-cn/): Vorlinx 将文件整理与 AI 协作汇于一处：画布连接、分组资料，多 AI 接力协同完成工作。自然语言搜索、PDF 阅读、摹音朗读、Markdown 编辑与加密备份，文件本地管理，内置 AI 本机运行。
+- [繁體中文](https://vorlinx.dekuan.org/zh-hant-tw/): Vorlinx 將檔案整理與 AI 協作匯於一處：畫布連結、分組資料，多 AI 接力協同完成工作。自然語言搜尋、PDF 閱讀、摹音朗讀、Markdown 編輯與加密備份，檔案本地管理，內建 AI 本機執行。
+- [English](https://vorlinx.dekuan.org/en-us/): Organize and link files on your Mac. Use AI Relay for multi-AI collaboration and AI Document Assistant for reading. Local AI search, voice cloning, Markdown editing and encrypted backups.
+
+## 简体中文
+
+文件一眼看全，连接随你所愿。
+
+Vorlinx 让文件整理与 AI 协作汇于一处。整理、连接与分组文件资料，连接多个 AI 工具，协同完成任务。自然语言搜索、文档阅读、摹音朗读、极简 Markdown 编辑。文件本地管理，内置 AI 本机运行，无订阅，无云端费用。
+
+### AI 接力
+围绕同一个工作目标分派任务，让不同 AI 共享当前工作上下文，协同推进工作。
+
+围绕同一个工作目标创建 AI 接力并分派任务，让多个 AI 共享当前工作上下文、对齐目标与要求，协同推进工作。任务分工与当前进展汇集在同一份 AI 接力文档中。
+
+### AI 文档助手
+通过 MCP，让支持它的 AI 助手操作 Vorlinx。
+打开文档、跳转页面，或开始朗读，用一句话完成。
+
+AI 文档助手通过 MCP 让支持它的 AI 助手查找与打开文档、跳转 PDF 页面、控制朗读；AI 接力用于组织多个 AI 围绕共同目标分派任务与协同工作。
+
+### 了解更多
+- [常见问题](https://vorlinx.dekuan.org/zh-hans-cn/faq/)
+- [关于 Vorlinx](https://vorlinx.dekuan.org/zh-hans-cn/about/)
+- [隐私政策](https://vorlinx.dekuan.org/zh-hans-cn/privacy/)
+- [支持与联系](https://vorlinx.dekuan.org/zh-hans-cn/support/)
+
+## 繁體中文
+
+檔案一眼看全，連結隨你所願。
+
+Vorlinx 讓檔案整理與 AI 協作匯於一處。整理、連結與分組檔案資料，連接多個 AI 工具，協同完成任務。自然語言搜尋、文件閱讀、摹音朗讀、極簡 Markdown 編輯。檔案本地管理，內建 AI 本機執行，無訂閱，無雲端費用。
+
+### AI 接力
+圍繞同一個工作目標分派任務，讓不同 AI 共享目前的工作上下文，協同推進工作。
+
+圍繞同一個工作目標建立 AI 接力並分派任務，讓多個 AI 共享目前的工作上下文、對齊目標與要求，協同推進工作。任務分工與目前進展匯集在同一份 AI 接力文件中。
+
+### AI 文件助手
+透過 MCP，讓支援它的 AI 助手操作 Vorlinx。
+開啟文件、跳轉頁面，或開始朗讀，用一句話完成。
+
+AI 文件助手透過 MCP 讓支援它的 AI 助手尋找與開啟文件、跳轉 PDF 頁面、控制朗讀；AI 接力用於組織多個 AI 圍繞共同目標分派任務與協同工作。
+
+### 瞭解更多
+- [常見問題](https://vorlinx.dekuan.org/zh-hant-tw/faq/)
+- [關於 Vorlinx](https://vorlinx.dekuan.org/zh-hant-tw/about/)
+- [隱私權政策](https://vorlinx.dekuan.org/zh-hant-tw/privacy/)
+- [支援與聯絡](https://vorlinx.dekuan.org/zh-hant-tw/support/)
+
+## English
+
+All your files at a glance. Link your way.
+
+Vorlinx brings file organization and AI collaboration together. Organize, link and group your files. Bring multiple AI tools together to complete tasks. Search in natural language, read documents, listen with voice cloning, and write in a minimal Markdown editor. Files stay local. Built-in AI runs on your Mac. No subscription. No cloud fees.
+
+### AI Relay
+Assign tasks toward a shared work goal. Let different AI assistants share the current work context and move the work forward together.
+
+Create an AI Relay around a shared work goal and assign tasks. Multiple AI assistants share the current work context, align on goals and requirements, and move the work forward together. Task assignments and current progress are recorded in one AI Relay document.
+
+### AI document assistant
+Use MCP to let a compatible AI assistant work with Vorlinx.
+Ask it to open a document, jump to a page, or start reading aloud.
+
+AI Document Assistant uses MCP to let compatible AI assistants find and open documents, navigate PDF pages and control reading aloud. AI Relay organizes task assignments and collaboration across multiple AI assistants working toward a shared goal.
+
+### Learn more
+- [Common questions](https://vorlinx.dekuan.org/en-us/faq/)
+- [About Vorlinx](https://vorlinx.dekuan.org/en-us/about/)
+- [Privacy policy](https://vorlinx.dekuan.org/en-us/privacy/)
+- [Support & contact](https://vorlinx.dekuan.org/en-us/support/)
+
